@@ -1,24 +1,52 @@
 [
   {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs",
+    "objectID": "index.html#hacking-cloud-brains-physical-sensors-and-the-network-and-orchestrating-talent",
+    "href": "index.html#hacking-cloud-brains-physical-sensors-and-the-network-and-orchestrating-talent",
     "title": "",
-    "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 1: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "section": "🔧 Hacking Cloud Brains, Physical Sensors, and the Network, and Orchestrating Talent",
+    "text": "🔧 Hacking Cloud Brains, Physical Sensors, and the Network, and Orchestrating Talent\n\n\nFigure 1: Cyber physical systems, cloud layer and participants\n\nSpeaker notes go here."
   },
   {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-github-getting-started-docs-1",
+    "objectID": "index.html#orchestrating-ucl-infrastructure",
+    "href": "index.html#orchestrating-ucl-infrastructure",
     "title": "",
-    "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 2: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+    "section": "🤖 Orchestrating UCL infrastructure",
+    "text": "🤖 Orchestrating UCL infrastructure\n\n\nFigure 2: Servers in UCL infrastructure and their network communication\n\nSpeaker notes go here."
   },
   {
-    "objectID": "index.html#title-of-the-slide",
-    "href": "index.html#title-of-the-slide",
+    "objectID": "index.html#demos-vmvm-and-bare-metalvm-communication-with-zenoh-plugin-ros2dds",
+    "href": "index.html#demos-vmvm-and-bare-metalvm-communication-with-zenoh-plugin-ros2dds",
     "title": "",
-    "section": "Title of the slide",
-    "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008;\nHe et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes goes here"
+    "section": "Demos: VM↔︎VM and Bare-metal↔︎VM Communication with zenoh-plugin-ros2dds",
+    "text": "Demos: VM↔︎VM and Bare-metal↔︎VM Communication with zenoh-plugin-ros2dds\n\n\n\nDocker container with ROS2 dependencies\nGithub Container Registry\nVMs managed with terraform and kubernetes (k8s)\n\n\n\n\n\n\n\n\nFigure 3: Hacking and connecting workflow\n\n\n\n\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#demos-isaacsim-and-isaaclab",
+    "href": "index.html#demos-isaacsim-and-isaaclab",
+    "title": "",
+    "section": "Demos: IsaacSim and IsaacLab",
+    "text": "Demos: IsaacSim and IsaacLab\n\n\n\n\n\n\n\n\nFigure 4: IsaacSim IDE with robot simple key control\n\n\n\n\n\n\n\n\n\nFigure 5: Franka Lift Cube (RL Training)\n\n\n\n\n\n\n\n\n\n\nFigure 6: ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py –task Isaac-Humanoid-v0 –num_envs 128 –max_iterations 2000 –headless\n\n\n\n\n\n\n\n\n\nFigure 7: ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py –task Isaac-Humanoid-v0 –num_envs 1000 –checkpoint logs/rsl_rl/humanoid"
+  },
+  {
+    "objectID": "index.html#future-events-hacking-cyber-physical-systems-in-real-time",
+    "href": "index.html#future-events-hacking-cyber-physical-systems-in-real-time",
+    "title": "",
+    "section": "Future events: Hacking cyber-physical systems in real-time",
+    "text": "Future events: Hacking cyber-physical systems in real-time\n\n\n\nHackathon 1: Preliminary Small Hackathon for Feasibility and Idea Generation. Monday, 2 March 2026 at UCL Here East (G40).\nHackathon 2: Larger Hackathon to Explore Ideas and Create Projects. Q4-2026\n\n\n\n\n\n\n\n\nFigure 8: https://github.com/UCL-CyberPhysicalSystems/hackathon-01\n\n\n\n\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#key-takeaways-why-this-matters",
+    "href": "index.html#key-takeaways-why-this-matters",
+    "title": "",
+    "section": "Key Takeaways & Why This Matters",
+    "text": "Key Takeaways & Why This Matters\n\n\nLowering the Barrier to Advanced Robotics at Scale\n\n\nCloud-ready, cost-aware infrastructure enables hands-on robotics training and research using real sensors, networks, and constraints.\n\n\n\n\n\n\nA Proven, Scalable Model for Collaboration\n\n\nHigh-performance networking and shared platforms make cross-department and cross-institution collaboration practical and repeatable.\n\n\n\n\n\n\nA Testbed for Research, Training, and Innovation\n\n\nThe testbed supports skills transfer, research experimentation, and the rapid development of new robotics workflows.\n\n\n\n\n\n\nCall to Action\n\n\nPartner with us to extend the testbed, through collaboration and funding to scale training, expand research use cases, and deploy models beyond a single institution.\n\n\n\n\n\n\nLowering the Barrier to Advanced Robotics\nA Scalable Model for Cross-Department Collaboration\nReal Sensors, Real Networks, Real Constraints\nHigh-Performance Networking Enables New Workflows\nCloud-Ready Robotics Training at Scale\nHands-On Learning Accelerates Skills Transfer\nCost-Aware, Sustainable Infrastructure Design\nA Testbed for Research, Training, and Innovation\nClear Opportunities for Collaboration & Funding\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008;\nHe et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978"
+  },
+  {
+    "objectID": "index.html#thank-you-to-ucl-colleagues.-lets-connect",
+    "href": "index.html#thank-you-to-ucl-colleagues.-lets-connect",
+    "title": "",
+    "section": "Thank You to UCL colleagues. Let’s Connect!",
+    "text": "Thank You to UCL colleagues. Let’s Connect!\n\nUCL CEGE: UCL Civil, Environmental and Geomatic Engineering:\nMickey Li, Chris Bendkowski\nUCL ARC: UCL Advanced Research Computing Centre:\nMarlon Wijeyasinghe, James Legg, Mack Nixon, Mahmoud Abdelrazek, Sunny Park, Emily Dubrovska, Yagmur Ozdemir, Ruaridh Gollifer, Samantha Ahern, Miguel Xochicale, James Hetherington\n\nUnified-AI team: Andrew Esterson and Sylvie Ramos\nCondenser team: Sam Reece and Brian Maher\n\nGet in touch! GitHub: https://github.com/mxochicale\n\n\n\n\n\nNotes goes here"
   },
   {
     "objectID": "index.html#my-journey",
