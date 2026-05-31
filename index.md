@@ -2,12 +2,12 @@ Miguel Xochicale
 
 # 
 
-<div style="background-color: rgba(22,22,22,0.75); border-radius: 10px; text-align:center; padding: 0px; padding-left: 1.5em; padding-right: 1.5em; max-width: min-content; min-width: max-content; margin-left: auto; margin-right: auto; padding-top: 0.2em; padding-bottom: 0.2em; line-height: 1.5em!important;">
+<div style="background-color: rgba(22,22,22,0.75);    border-radius: 10px;    text-align:center;    padding: 0px;    padding-left: 1.5em;    padding-right: 1.5em;    max-width: min-content;    min-width: max-content;    margin-left: auto;    margin-right: auto;    padding-top: 0.2em;    padding-bottom: 0.2em;    line-height: 1.5em!important;">
 
 <span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
 
-Modernising Robotics for Collaborative Science
-<!--  through In-House Infrastructure:
+Modernising Robotics Skills for Collaborative Science  
+through In-House Infrastructure <!-- 
 Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Networked Systems
 -->
 
@@ -22,9 +22,9 @@ Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Ne
 
 <div class="footer">
 
-<span class="dim-text" style="&quot;text-align:left;'">Q4-2025
-[(grid-worms-animation 2023 by
-saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
+<span class="dim-text" style="&quot;text-align:left;'">Q1-2026
+[(web-animations 2025 by
+mxochicale)](https://mxochicale.github.io/web-animations/)</span>
 
 </div>
 
