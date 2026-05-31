@@ -44,7 +44,7 @@ git push origin gh-pages
 git checkout main
 #https://jiafulow.github.io/blog/2020/07/09/create-gh-pages-branch-in-existing-repo/
 ```
-See [hash for template]( TODO_HASH_TEMPLATE )
+See [hash for template](https://github.com/mxochicale/robo4sci/commit/aa20a6d6069dfa82d4407ba3d18e656cada9980a)
 
 * Select deploy from branch and select gh-pages
 
