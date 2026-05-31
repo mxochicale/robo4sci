@@ -80,7 +80,7 @@ quarto preview index.qmd
 ### Push changes and publish slides
 ```bash
 git add .
-git commmit -m '<add message> CI #ISSUE_NUMBER'
+git commit -m '<add message> CI #ISSUE_NUMBER'
 git push origin <feature_branch>
 ```
 
