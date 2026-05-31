@@ -49,10 +49,7 @@ See [hash for template]( TODO_HASH_TEMPLATE )
 * Select deploy from branch and select gh-pages
 
 
-
-## Edit and preview slides
-
-### Dependencies
+## Dependencies
 * quarto installation (See more: https://github.com/mxochicale/tools/tree/main/quarto)
 ```
 wget https://raw.githubusercontent.com/mxochicale/tools/refs/heads/main/quarto/download_install_quart.bash
@@ -61,14 +58,15 @@ rm download_install_quart.bash
 quarto check
 ```
 
-### Quarto extensions
+## Quarto extensions
 ```
 quarto list extensions
 quarto add quarto-ext/fontawesome
 quarto remove quarto-ext/fontawesome
 ```
 
-### Edit and preview slices
+
+## Edit and preview slices
 * Open [index.qmd](index.qmd) to edit slides. 
 * Then you can preview them:
 ```
@@ -77,8 +75,8 @@ quarto preview index.qmd
 ```
 
 
+
 ### Push changes and publish slides
-* add feature_branch name to [publish-quarto.yml]( TODO_ADDLINK /publish-quarto.yml)
 ```bash
 git add .
 git commmit -m '<add message> CI #ISSUE_NUMBER'
