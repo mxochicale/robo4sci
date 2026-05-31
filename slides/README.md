@@ -66,7 +66,8 @@ quarto remove quarto-ext/fontawesome
 ```
 
 
-## Edit and preview slices
+# Edit and preview slices
+
 * Open [index.qmd](index.qmd) to edit slides. 
 * Then you can preview them:
 ```

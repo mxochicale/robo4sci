@@ -32,7 +32,10 @@ format:
 
 <span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
 
-Title of the slides: Please add the title
+Modernising Robotics for Collaborative Science
+<!--  through In-House Infrastructure:
+Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Networked Systems
+-->
 
 </span>  
 
