@@ -7,9 +7,7 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-6b6957c917596b414ec0b78690761e87.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
   <title>Robo2Sci</title>
@@ -33,8 +31,74 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #e1e4e8; background-color: #24292e; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #e1e4e8; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #f97583; } /* Attribute */
+    code span.bn { color: #79b8ff; } /* BaseN */
+    code span.bu { color: #f97583; } /* BuiltIn */
+    code span.cf { color: #f97583; } /* ControlFlow */
+    code span.ch { color: #9ecbff; } /* Char */
+    code span.cn { color: #79b8ff; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #f97583; } /* DataType */
+    code span.dv { color: #79b8ff; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #f97583; font-weight: bold; } /* Extension */
+    code span.fl { color: #79b8ff; } /* Float */
+    code span.fu { color: #b392f0; } /* Function */
+    code span.im { color: #9ecbff; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #f97583; } /* Keyword */
+    code span.op { color: #e1e4e8; } /* Operator */
+    code span.ot { color: #b392f0; } /* Other */
+    code span.pp { color: #f97583; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #79b8ff; } /* SpecialChar */
+    code span.ss { color: #9ecbff; } /* SpecialString */
+    code span.st { color: #9ecbff; } /* String */
+    code span.va { color: #ffab70; } /* Variable */
+    code span.vs { color: #9ecbff; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-4df01d85d5cf19cc6202400f4f043f84.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-a744a2b370710ab7168324db5d172d71.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -142,18 +206,19 @@
     <div class="slides">
 
 
+<section>
 <section id="section" class="title-slide slide level1 centeredslide center" data-background-iframe="https://mxochicale.github.io/web-animations/" loading="lazy">
 <h1></h1>
 <div style="background-color: rgba(22,22,22,0.75);    border-radius: 10px;    text-align:center;    padding: 0px;    padding-left: 1.5em;    padding-right: 1.5em;    max-width: min-content;    min-width: max-content;    margin-left: auto;    margin-right: auto;    padding-top: 0.2em;    padding-bottom: 0.2em;    line-height: 1.5em!important;">
 <p><span style="color:#939393; font-size:1.75em; text-align:left; display:block;"></span></p>
-<p>Modernising Robotics Skills for Collaborative Science<br>
-through In-House Infrastructure <!-- 
+<p><span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Modernising Robotics Skills<br>
+for Collaborative Science</span></p>
+<!-- 
 Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Networked Systems
---></p>
+-->
 <p></p>
-<p><span style="font-size:0.55em;">Miguel Xochicale<br>
-<a href="http://name-surname.github.io/"><i class="fa-solid fa-home" aria-label="home"></i></a> UCL-ARC<br>
-</span></p>
+<hr>
+<p><span style="font-size:0.55em; color:#aaaaaa;"><a href="http://name-surname.github.io/"><strong>Miguel Xochicale</strong></a> · <a href="https://www.ucl.ac.uk/advanced-research-computing/">UCL Advanced Research Computing</a></span></p>
 </div>
 <div class="footer">
 <p><span class="dim-text" style="&quot;text-align:left;'">Q1-2026 <a href="https://mxochicale.github.io/web-animations/">(web-animations 2025 by mxochicale)</a></span></p>
@@ -171,28 +236,64 @@ Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Ne
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================
+     OVERVIEW
+     ============================================================ -->
 </section>
-
-<section id="overview" class="title-slide slide level1 center" style="font-size: 60%;">
-<h1>Overview</h1>
-<ul>
-<li><a href="#/Introduction">Introduction</a></li>
-<li><a href="#/ucl-nfrastructure">UCL Infrastructure</a></li>
-<li><a href="#/demos">Demonstrations and Use Cases</a></li>
-<li><a href="#/tacfa">Future work, Key Takeaways, Calls to Action and Acknowledgements</a></li>
-</ul>
-<!--  Comments -->
-<!--  * [Open-Source Software in Healthcare](#sec-ossh) -->
-<!-- *********************** NEW SLIDE *********************** -->
-</section>
-
+<section id="overview" class="slide level2 smaller">
+<h2>Overview</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="what-well-cover">What We’ll Cover</h3>
+<ol type="1">
+<li><strong>Introduction</strong> — Modernising robotics skills at UCL</li>
+<li><strong>UCL Infrastructure</strong> — Cloud, network &amp; physical layers</li>
+<li><strong>Demonstrations</strong> — Real use cases &amp; live tooling</li>
+<li><strong>Future Work</strong> — Next hackathons &amp; calls to action</li>
+</ol>
+</div><div class="column" style="width:50%;">
+<h3 id="key-themes">Key Themes</h3>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><span class="emoji" data-emoji="cloud">☁️</span> Cloud-native robotics</strong></p>
+</div>
+<div class="callout-content">
+<p>Kubernetes, Terraform, container registries</p>
+</div>
+</div>
+</div>
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><span class="emoji" data-emoji="robot">🤖</span> Simulation at scale</strong></p>
+</div>
+<div class="callout-content">
+<p>IsaacSim, IsaacLab, reinforcement learning</p>
+</div>
+</div>
+</div>
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><span class="emoji" data-emoji="busts_in_silhouette">👥</span> Collaborative science</strong></p>
+</div>
+<div class="callout-content">
+<p>Cross-department infrastructure, shared testbeds</p>
+</div>
+</div>
+</div>
+</div></div>
+<!-- ============================================================
+     SECTION: INTRODUCTION
+     ============================================================ -->
+</section></section>
 <section>
-<section id="Introduction" class="title-slide slide level1 center">
+<section id="Introduction" class="title-slide slide level1 center" data-background-color="#1a1a2e">
 <h1>Introduction</h1>
-<p>Modernizing Robotics Skills</p>
+<p><strong>Modernising Robotics Skills</strong></p>
 <aside class="notes">
-<p>Notes goes here</p>
+<p>Set the scene: why does UCL need modernised robotics infrastructure? The challenge is bridging simulation, cloud compute, and real sensors in a way that’s accessible to researchers and students.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -204,15 +305,15 @@ Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Ne
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 </section>
 <section id="hacking-cloud-brains-physical-sensors-and-the-network-and-orchestrating-talent" class="slide level2">
 <h2><span class="emoji" data-emoji="wrench">🔧</span> Hacking Cloud Brains, Physical Sensors, and the Network, and Orchestrating Talent</h2>
 
-<img data-src="figures/team-ucl-cps-hackathon.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template"><p class="caption">
-Figure&nbsp;1: Cyber physical systems, cloud layer and participants
+<img data-src="figures/team-ucl-cps-hackathon.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%" id="fig-hackathon"><p class="caption">
+Figure&nbsp;1: <em>Participants working across cyber-physical systems, cloud layers, and sensor networks at UCL Here East.</em>
 </p><aside class="notes">
-<p>Speaker notes go here.</p>
+<p>Describe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -224,14 +325,16 @@ Figure&nbsp;1: Cyber physical systems, cloud layer and participants
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================
+     SECTION: UCL INFRASTRUCTURE
+     ============================================================ -->
 </section></section>
 <section>
-<section id="ucl-nfrastructure" class="title-slide slide level1 center">
+<section id="ucl-infrastructure" class="title-slide slide level1 center" data-background-color="#0d1b2a">
 <h1>UCL Infrastructure</h1>
-<p>Orchestrating Cloud Brains, Physical Sensors, and the Network</p>
+<p><strong>Orchestrating Cloud, Network, and Physical Sensors</strong></p>
 <aside class="notes">
-<p>Notes goes here</p>
+<p>Walk through the three layers: cloud VMs managed via Terraform/k8s, the campus network, and physical hardware (sensors, robots).</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -243,15 +346,36 @@ Figure&nbsp;1: Cyber physical systems, cloud layer and participants
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 </section>
-<section id="orchestrating-ucl-infrastructure" class="slide level2">
-<h2><span class="emoji" data-emoji="robot">🤖</span> Orchestrating UCL infrastructure</h2>
+<section id="ucl-infrastructure-overview" class="slide level2">
+<h2><span class="emoji" data-emoji="robot">🤖</span> UCL Infrastructure Overview</h2>
 
-<img data-src="figures/cyber-physical-hackathon-network.svg" class="quarto-figure quarto-figure-center r-stretch" id="fig-template"><p class="caption">
-Figure&nbsp;2: Servers in UCL infrastructure and their network communication
+<img data-src="figures/cyber-physical-hackathon-network.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:88.0%" id="fig-network"><p class="caption">
+Figure&nbsp;2: <em>Server topology and network communication across UCL’s cyber-physical infrastructure.</em>
 </p><aside class="notes">
-<p>Speaker notes go here.</p>
+<p>Key point: the infrastructure is reproducible. Terraform configs and container images are versioned on GitHub, so any team can spin up the same environment.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Infrastructure Stack</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><strong>Compute</strong>: VMs managed with Terraform + Kubernetes (k8s)<br>
+</li>
+<li><strong>Containers</strong>: ROS 2 images via GitHub Container Registry<br>
+</li>
+<li><strong>Middleware</strong>: <code>zenoh-plugin-ros2dds</code> for VM↔︎VM and bare-metal↔︎VM bridging<br>
+</li>
+<li><strong>Networking</strong>: High-performance campus fabric, 10 Gbps+ links</li>
+</ul>
+</div>
+</div>
+</div>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -263,14 +387,16 @@ Figure&nbsp;2: Servers in UCL infrastructure and their network communication
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================
+     SECTION: DEMOS
+     ============================================================ -->
 </section></section>
 <section>
-<section id="demos" class="title-slide slide level1 center">
-<h1>Demos</h1>
-<p>Orchestrating Cloud Brains, Physical Sensors, and the Network</p>
+<section id="demos" class="title-slide slide level1 center" data-background-color="#0f2027">
+<h1>Demonstrations</h1>
+<p><strong>Cloud Brains · Physical Sensors · Real Networks</strong></p>
 <aside class="notes">
-<p>Notes goes here</p>
+<p>Three demos: (1) VM-to-VM ROS 2 comms via zenoh, (2) IsaacSim interactive control, (3) IsaacLab RL training at scale.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -282,31 +408,43 @@ Figure&nbsp;2: Servers in UCL infrastructure and their network communication
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 </section>
-<section id="demos-vmvm-and-bare-metalvm-communication-with-zenoh-plugin-ros2dds" class="slide level2">
-<h2>Demos: VM↔︎VM and Bare-metal↔︎VM Communication with <code>zenoh-plugin-ros2dds</code></h2>
+<section id="demo-1.-vmvm-communication-with-zenoh-plugin-ros2dds" class="slide level2 smaller">
+<h2>Demo 1. VM↔︎VM Communication with <code>zenoh-plugin-ros2dds</code></h2>
 <div class="columns">
 <div class="column" style="width:35%;">
+<h3 id="what-was-built">What Was Built</h3>
 <ul>
-<li>Docker container with ROS2 dependencies</li>
-<li>Github Container Registry</li>
-<li>VMs managed with terraform and kubernetes (k8s)</li>
+<li>ROS 2 Docker container pushed to GitHub Container Registry</li>
+<li>VMs provisioned and torn down with <strong>Terraform + k8s</strong></li>
+<li><code>zenoh-plugin-ros2dds</code> bridges DDS traffic across VM boundaries</li>
+<li>Enables bare-metal ↔︎ VM and VM ↔︎ VM ROS 2 topic sharing with <strong>zero config changes</strong> on the robot side</li>
 </ul>
 </div><div class="column" style="width:65%;">
-<div id="fig-template" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<div id="fig-pipeline" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img data-src="figures/hacking-pipeline.svg" class="quarto-figure quarto-figure-center">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Hacking and connecting workflow
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: <em>End-to-end pipeline: container build → registry → VM deployment → zenoh bridge → ROS 2 topic relay.</em>
 </figcaption>
 </figure>
 </div>
 </div></div>
 <aside class="notes">
-<p>Speaker notes go here.</p>
+<p>Emphasise that the zenoh bridge makes the infrastructure topology transparent to application code. ROS 2 nodes don’t need to know they’re crossing VM boundaries.</p>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Repo</strong>: <a href="https://github.com/UCL-CyberPhysicalSystems/hackathon-01">UCL-CyberPhysicalSystems/hackathon-01</a></p>
+</div>
+</div>
+</div>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -318,56 +456,67 @@ Figure&nbsp;3: Hacking and connecting workflow
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 </section>
-<section id="demos-isaacsim-and-isaaclab" class="slide level2">
-<h2>Demos: IsaacSim and IsaacLab</h2>
+<section id="demo-2.-isaacsim-isaaclab" class="slide level2 smaller">
+<h2>Demo 2. IsaacSim &amp; IsaacLab</h2>
 <div class="columns">
-<div class="column" style="width: 35%; font-size: 30%;">
-<div id="fig-template" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<div class="column" style="width:38%;">
+<div id="fig-isaacsim" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="figures/ezgif-4fa230460975b3.gif" class="quarto-figure quarto-figure-center">
+<div aria-describedby="fig-isaacsim-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/ezgif-4fa230460975b3.gif" class="quarto-figure quarto-figure-center" style="width:70.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: IsaacSim IDE with robot simple key control
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-isaacsim-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: <em>IsaacSim IDE: interactive robot key control.</em>
 </figcaption>
 </figure>
 </div>
-<div id="fig-template" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<div id="fig-franka" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="figures/ezgif-Isaac-Lift-Cube-Franka-v0.gif" class="quarto-figure quarto-figure-center">
+<div aria-describedby="fig-franka-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/ezgif-Isaac-Lift-Cube-Franka-v0.gif" class="quarto-figure quarto-figure-center" style="width:70.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Franka Lift Cube (RL Training)
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-franka-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: <em>Franka Lift Cube — RL policy training.</em>
 </figcaption>
 </figure>
 </div>
-</div><div class="column" style="width: 60%; font-size: 30%;">
-<div id="fig-template" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+</div><div class="column" style="width:60%;">
+<div id="fig-humanoid-train" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="figures/ezgif-train_Isaac-Humanoid-v0_iter_2000.gif" class="quarto-figure quarto-figure-center">
+<div aria-describedby="fig-humanoid-train-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/ezgif-train_Isaac-Humanoid-v0_iter_2000.gif" class="quarto-figure quarto-figure-center" style="width:70.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py –task Isaac-Humanoid-v0 –num_envs 128 –max_iterations 2000 –headless
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-humanoid-train-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: <em>Humanoid training — 128 parallel environments, 2000 iterations.</em>
 </figcaption>
 </figure>
 </div>
-<div id="fig-template" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="figures/ezgif-play_Isaac-Humanoid-v0_1000env.gif" class="quarto-figure quarto-figure-center">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py –task Isaac-Humanoid-v0 –num_envs 1000 –checkpoint logs/rsl_rl/humanoid
-</figcaption>
-</figure>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Train</span></span>
+<span id="cb1-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">./isaaclab.sh</span> <span class="at">-p</span> scripts/reinforcement_learning/rsl_rl/train.py <span class="dt">\</span></span>
+<span id="cb1-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">--task</span> Isaac-Humanoid-v0 <span class="at">--num_envs</span> 128 <span class="dt">\</span></span>
+<span id="cb1-4"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">--max_iterations</span> 2000 <span class="at">--headless</span></span>
+<span id="cb1-5"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Play / evaluate</span></span>
+<span id="cb1-7"><a aria-hidden="true" tabindex="-1"></a><span class="ex">./isaaclab.sh</span> <span class="at">-p</span> scripts/reinforcement_learning/rsl_rl/play.py <span class="dt">\</span></span>
+<span id="cb1-8"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">--task</span> Isaac-Humanoid-v0 <span class="at">--num_envs</span> 1000 <span class="dt">\</span></span>
+<span id="cb1-9"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">--checkpoint</span> logs/rsl_rl/humanoid</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 <aside class="notes">
-
+<p>IsaacLab unlocks GPU-parallelised RL training on UCL’s compute nodes. Highlight the jump from 128 envs (training) to 1000 envs (evaluation) as evidence of the infrastructure’s headroom.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/ezgif-train_Isaac-Humanoid-v0_iter_2000.gif" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+<p>./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py –task Isaac-Humanoid-v0 –num_envs 128 –max_iterations 2000 –headless</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/ezgif-play_Isaac-Humanoid-v0_1000env.gif" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+<p>./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py –task Isaac-Humanoid-v0 –num_envs 1000 –checkpoint logs/rsl_rl/humanoid</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -379,13 +528,15 @@ Figure&nbsp;7: ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py �
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================
+     SECTION: FUTURE WORK & TAKEAWAYS
+     ============================================================ -->
 </section></section>
 <section>
-<section id="tacfa" class="title-slide slide level1 center">
-<h1>Future work, Key Takeaways, Calls to Action and Acknowledgements</h1>
+<section id="tacfa" class="title-slide slide level1 center" data-background-color="#1a1a2e">
+<h1>Future Work &amp; Key Takeaways</h1>
 <aside class="notes">
-<p>Notes goes here</p>
+<p>Wrap up: upcoming hackathons, what the community should take away, and a concrete call to action for collaboration and funding.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -397,30 +548,51 @@ Figure&nbsp;7: ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py �
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 </section>
-<section id="future-events-hacking-cyber-physical-systems-in-real-time" class="slide level2">
-<h2>Future events: Hacking cyber-physical systems in real-time</h2>
+<section id="upcoming-hackathons" class="slide level2 smaller">
+<h2>Upcoming Hackathons</h2>
 <div class="columns">
-<div class="column" style="width: 35%; font-size: 80%;">
-<ul>
-<li>Hackathon 1: Preliminary Small Hackathon for Feasibility and Idea Generation. <strong>Monday, 2 March 2026 at UCL Here East (G40).</strong></li>
-<li>Hackathon 2: Larger Hackathon to Explore Ideas and Create Projects. <strong>Q4-2026</strong></li>
-</ul>
-</div><div class="column" style="width:65%;">
-<div id="fig-template" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="figures/cyber-physical-hackathon-network.svg" class="quarto-figure quarto-figure-center">
+<div class="column" style="width:40%;">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><span class="emoji" data-emoji="calendar">📆</span> Hackathon 1 — <strong>2 March 2026</strong></strong></p>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-template-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: <a href="https://github.com/UCL-CyberPhysicalSystems/hackathon-01">https://github.com/UCL-CyberPhysicalSystems/hackathon-01</a>
+<div class="callout-content">
+<p><strong>Preliminary Small Hackathon</strong><br>
+Feasibility testing &amp; idea generation<br>
+📍 UCL Here East, Room G40</p>
+</div>
+</div>
+</div>
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><span class="emoji" data-emoji="calendar">📆</span> Hackathon 2 — <strong>Q4 2026</strong></strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Larger Collaborative Hackathon</strong><br>
+Explore ideas · Create research projects<br>
+📍 TBC</p>
+</div>
+</div>
+</div>
+<p><a href="https://github.com/UCL-CyberPhysicalSystems/hackathon-01"><strong>Register / follow progress →</strong></a></p>
+</div><div class="column" style="width:60%;">
+<div id="fig-future-network" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-future-network-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="figures/cyber-physical-hackathon-network.svg" class="quarto-figure quarto-figure-center" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-future-network-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: <em>The same infrastructure will underpin both hackathons.</em>
 </figcaption>
 </figure>
 </div>
 </div></div>
 <aside class="notes">
-<p>Speaker notes go here.</p>
+<p>Hackathon 1 is a low-stakes day to validate the setup with a small group. Hackathon 2 opens it to a much larger audience with external collaborators.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -432,51 +604,20 @@ Figure&nbsp;8: <a href="https://github.com/UCL-CyberPhysicalSystems/hackathon-01
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 </section>
-<section id="key-takeaways-why-this-matters" class="slide level2">
-<h2>Key Takeaways &amp; Why This Matters</h2>
-<div style="font-size: 80%;">
+<section id="key-takeaways" class="slide level2">
+<h2>Key Takeaways</h2>
+<div style="font-size: 90%;">
 <ul>
-<li>Lowering the Barrier to Advanced Robotics at Scale
-<ul>
-<li><div style="font-size: 60%;">
-Cloud-ready, cost-aware infrastructure enables hands-on robotics training and research using real sensors, networks, and constraints.
-</div></li>
-</ul></li>
-</ul>
-</div>
-<div style="font-size: 80%;">
-<ul>
-<li>A Proven, Scalable Model for Collaboration
-<ul>
-<li><div style="font-size: 60%;">
-High-performance networking and shared platforms make cross-department and cross-institution collaboration practical and repeatable.
-</div></li>
-</ul></li>
-</ul>
-</div>
-<div style="font-size: 80%;">
-<ul>
-<li>A Testbed for Research, Training, and Innovation
-<ul>
-<li><div style="font-size: 60%;">
-The testbed supports skills transfer, research experimentation, and the rapid development of new robotics workflows.
-</div></li>
-</ul></li>
-</ul>
-</div>
-<div style="font-size: 80%;">
-<ul>
-<li>Call to Action
-<ul>
-<li><div style="font-size: 60%;">
-Partner with us to extend the testbed, through collaboration and funding to scale training, expand research use cases, and deploy models beyond a single institution.
-</div></li>
-</ul></li>
+<li class="fragment"><p><strong><span class="emoji" data-emoji="unlock">🔓</span> Lowering the barrier to advanced robotics</strong> Cloud-ready, cost-aware infrastructure enables hands-on training with real sensors and real network constraints, without specialist hardware budgets.</p></li>
+<li class="fragment"><p><strong><span class="emoji" data-emoji="arrows_counterclockwise">🔄</span> A proven, scalable model for collaboration</strong> High-performance networking and shared platforms make cross-department and cross-institution work practical and repeatable.</p></li>
+<li class="fragment"><p><strong><span class="emoji" data-emoji="test_tube">🧪</span> A living testbed for research &amp; training</strong> The infrastructure supports skills transfer, rapid prototyping of robotics workflows, and publishable research experiments.</p></li>
+<li class="fragment"><p><strong><span class="emoji" data-emoji="handshake">🤝</span> Call to Action</strong> Partner with us to extend the testbed. We are actively seeking collaboration and funding to scale training, expand use cases, and deploy beyond UCL.</p></li>
 </ul>
 </div>
 <aside class="notes">
+<p>Deliver these one at a time with the incremental reveal. End on the call to action — have contact details ready.</p>
 <ol type="1">
 <li>Lowering the Barrier to Advanced Robotics</li>
 <li>A Scalable Model for Cross-Department Collaboration</li>
@@ -501,26 +642,36 @@ Partner with us to extend the testbed, through collaboration and funding to scal
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 </section>
-<section id="thank-you-to-ucl-colleagues.-lets-connect" class="slide level2">
-<h2>Thank You to UCL colleagues. Let’s Connect!</h2>
-<ul>
-<li><p>UCL CEGE: UCL Civil, Environmental and Geomatic Engineering:<br>
-<a href="https://github.com/mhl787156">Mickey Li</a>, <a href="https://github.com/ctbend">Chris Bendkowski</a></p></li>
-<li><p>UCL ARC: UCL Advanced Research Computing Centre:<br>
-<a href="https://github.com/mwij02">Marlon Wijeyasinghe</a>, <a href="https://github.com/cjlegg">James Legg</a>, <a href="https://github.com/TOADD">Mack Nixon</a>, <a href="https://github.com/TOADD">Mahmoud Abdelrazek</a>, <a href="https://github.com/TOADD">Sunny Park</a>, <a href="https://github.com/pineapple-cat">Emily Dubrovska</a>, <a href="https://github.com/yidilozdemir">Yagmur Ozdemir</a>, <a href="https://github.com/ruaridhg">Ruaridh Gollifer</a>, <a href="https://github.com/quirksahern">Samantha Ahern</a>, <a href="https://github.com/mxochicale">Miguel Xochicale</a>, <a href="https://github.com/jamespjh">James Hetherington</a></p>
-<ul>
-<li>Unified-AI team: Andrew Esterson and Sylvie Ramos</li>
-<li>Condenser team: Sam Reece and Brian Maher</li>
-</ul></li>
-<li><p>Get in touch! GitHub: <a href="https://github.com/mxochicale">https://github.com/mxochicale</a></p></li>
-</ul>
-<div style="font-size: 40%;">
-
+<section id="thank-you-lets-connect" class="slide level2 smaller">
+<h2>Thank You · Let’s Connect</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="ucl-cege">UCL CEGE</h3>
+<p><a href="https://github.com/mhl787156">Mickey Li</a> · <a href="https://github.com/ctbend">Chris Bendkowski</a></p>
+<h3 id="ucl-arc">UCL ARC</h3>
+<p><a href="https://github.com/mwij02">Marlon Wijeyasinghe</a> · <a href="https://github.com/cjlegg">James Legg</a> · <a href="https://github.com/TOADD">Mack Nixon</a> · <a href="https://github.com/TOADD">Mahmoud Abdelrazek</a> · <a href="https://github.com/TOADD">Sunny Park</a> · <a href="https://github.com/pineapple-cat">Emily Dubrovska</a> · <a href="https://github.com/yidilozdemir">Yagmur Ozdemir</a> · <a href="https://github.com/ruaridhg">Ruaridh Gollifer</a> · <a href="https://github.com/quirksahern">Samantha Ahern</a> · <a href="https://github.com/jamespjh">James Hetherington</a></p>
+</div><div class="column" style="width:50%;">
+<h3 id="teams">Teams</h3>
+<p><strong>Unified-AI</strong>: Andrew Esterson · Sylvie Ramos<br>
+<strong>Condenser</strong>: Sam Reece · Brian Maher</p>
+<hr>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><span class="emoji" data-emoji="speech_balloon">💬</span> Get in Touch</strong></p>
 </div>
+<div class="callout-content">
+<p><strong>GitHub</strong>: <a href="https://github.com/mxochicale">github.com/mxochicale</a><br>
+<strong>UCL ARC</strong>: <a href="https://www.ucl.ac.uk/arc">ucl.ac.uk/arc</a><br>
+<strong>Hackathon repo</strong>: <a href="https://github.com/UCL-CyberPhysicalSystems/hackathon-01">UCL-CyberPhysicalSystems/hackathon-01</a></p>
+</div>
+</div>
+</div>
+</div></div>
 <aside class="notes">
-<p>Notes goes here</p>
+<p>Thank the room. Leave the slide up during questions — GitHub handle and repo URL are visible for anyone who wants to follow up.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -532,37 +683,21 @@ Partner with us to extend the testbed, through collaboration and funding to scal
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================
+     EXTRA SLIDES (appendix)
+     ============================================================ -->
 </section></section>
 <section>
-<section id="extra-slides" class="title-slide slide level1 center">
-<h1>Extra slides</h1>
-<aside class="notes">
-<p>Notes goes here</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<section id="appendix" class="title-slide slide level1 center" data-background-color="#111111">
+<h1>Appendix</h1>
+<p>Extra slides for Q&amp;A</p>
+<!-- ============================================================ -->
 </section>
-<section id="my-journey" class="slide level2">
+<section id="sec-mt" class="slide level2 smaller">
 <h2>My Journey</h2>
-<div id="sec-mt" style="margin-top: 0px; font-size: 50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/mx.svg" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-<aside class="notes">
-<p>Notes goes here for my journey</p>
+
+<img data-src="figures/mx.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes">
+<p>Use this slide if asked about background — brief overview of the path from robotics research to ARC infrastructure work.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -741,10 +876,10 @@ Partner with us to extend the testbed, through collaboration and funding to scal
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'fade',
 
         // Transition speed (default/fast/slow)
-        transitionSpeed: 'default',
+        transitionSpeed: 'fast',
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)

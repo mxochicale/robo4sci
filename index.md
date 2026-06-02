@@ -6,16 +6,21 @@ Miguel Xochicale
 
 <span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
 
-Modernising Robotics Skills for Collaborative Science  
-through In-House Infrastructure <!-- 
+<span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Modernising
+Robotics Skills  
+for Collaborative Science</span>
+
+<!-- 
 Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Networked Systems
 -->
 
 </span>
 
-<span style="font-size:0.55em;">Miguel Xochicale  
-[](http://name-surname.github.io/) UCL-ARC  
-</span>
+------------------------------------------------------------------------
+
+<span style="font-size:0.55em; color:#aaaaaa;">[**Miguel
+Xochicale**](http://name-surname.github.io/) · [UCL Advanced Research
+Computing](https://www.ucl.ac.uk/advanced-research-computing/)</span>
 
 </div>
 
@@ -33,114 +38,177 @@ mxochicale)](https://mxochicale.github.io/web-animations/)</span>
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================
+     OVERVIEW
+     ============================================================ -->
 
-# Overview
+## Overview
 
-- [Introduction](#Introduction)
-- [UCL Infrastructure](#ucl-nfrastructure)
-- [Demonstrations and Use Cases](#demos)
-- [Future work, Key Takeaways, Calls to Action and
-  Acknowledgements](#tacfa)
+<div class="columns">
 
-<!--  Comments -->
+<div class="column" width="50%">
 
-<!--  * [Open-Source Software in Healthcare](#sec-ossh) -->
+### What We’ll Cover
 
-<!-- *********************** NEW SLIDE *********************** -->
+1.  **Introduction** — Modernising robotics skills at UCL
+2.  **UCL Infrastructure** — Cloud, network & physical layers
+3.  **Demonstrations** — Real use cases & live tooling
+4.  **Future Work** — Next hackathons & calls to action
+
+</div>
+
+<div class="column" width="50%">
+
+### Key Themes
+
+> [!NOTE]
+>
+> ### :cloud: Cloud-native robotics
+>
+> Kubernetes, Terraform, container registries
+
+> [!TIP]
+>
+> ### :robot: Simulation at scale
+>
+> IsaacSim, IsaacLab, reinforcement learning
+
+> [!IMPORTANT]
+>
+> ### :busts_in_silhouette: Collaborative science
+>
+> Cross-department infrastructure, shared testbeds
+
+</div>
+
+</div>
+
+<!-- ============================================================
+     SECTION: INTRODUCTION
+     ============================================================ -->
 
 # Introduction
 
-Modernizing Robotics Skills
+**Modernising Robotics Skills**
 
 <div class="notes">
 
-Notes goes here
+Set the scene: why does UCL need modernised robotics infrastructure? The
+challenge is bridging simulation, cloud compute, and real sensors in a
+way that’s accessible to researchers and students.
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 
 ## :wrench: Hacking Cloud Brains, Physical Sensors, and the Network, and Orchestrating Talent
 
-<div id="fig-template">
+<div id="fig-hackathon">
 
-<img src="figures/team-ucl-cps-hackathon.svg" data-fig-align="center" />
+<img src="figures/team-ucl-cps-hackathon.svg" style="width:90.0%"
+data-fig-align="center" />
 
-Figure 1: Cyber physical systems, cloud layer and participants
+Figure 1: *Participants working across cyber-physical systems, cloud
+layers, and sensor networks at UCL Here East.*
 
 </div>
 
 <div class="notes">
 
-Speaker notes go here.
+Describe the hackathon format: participants connected VMs, physical
+sensors, and cloud nodes in a supervised setting. This became the model
+for scaling robotics education at UCL.
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================
+     SECTION: UCL INFRASTRUCTURE
+     ============================================================ -->
 
 # UCL Infrastructure
 
-Orchestrating Cloud Brains, Physical Sensors, and the Network
+**Orchestrating Cloud, Network, and Physical Sensors**
 
 <div class="notes">
 
-Notes goes here
+Walk through the three layers: cloud VMs managed via Terraform/k8s, the
+campus network, and physical hardware (sensors, robots).
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 
-## :robot: Orchestrating UCL infrastructure
+## :robot: UCL Infrastructure Overview
 
-<div id="fig-template">
+<div id="fig-network">
 
 <img src="figures/cyber-physical-hackathon-network.svg"
-data-fig-align="center" />
+style="width:88.0%" data-fig-align="center" />
 
-Figure 2: Servers in UCL infrastructure and their network communication
+Figure 2: *Server topology and network communication across UCL’s
+cyber-physical infrastructure.*
 
 </div>
 
 <div class="notes">
 
-Speaker notes go here.
+Key point: the infrastructure is reproducible. Terraform configs and
+container images are versioned on GitHub, so any team can spin up the
+same environment.
+
+> [!TIP]
+>
+> ### Infrastructure Stack
+>
+> - **Compute**: VMs managed with Terraform + Kubernetes (k8s)  
+> - **Containers**: ROS 2 images via GitHub Container Registry  
+> - **Middleware**: `zenoh-plugin-ros2dds` for VM↔VM and bare-metal↔VM
+>   bridging  
+> - **Networking**: High-performance campus fabric, 10 Gbps+ links
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================
+     SECTION: DEMOS
+     ============================================================ -->
 
-# Demos
+# Demonstrations
 
-Orchestrating Cloud Brains, Physical Sensors, and the Network
+**Cloud Brains · Physical Sensors · Real Networks**
 
 <div class="notes">
 
-Notes goes here
+Three demos: (1) VM-to-VM ROS 2 comms via zenoh, (2) IsaacSim
+interactive control, (3) IsaacLab RL training at scale.
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 
-## Demos: VM↔VM and Bare-metal↔VM Communication with `zenoh-plugin-ros2dds`
+## Demo 1. VM↔VM Communication with `zenoh-plugin-ros2dds`
 
 <div class="columns">
 
 <div class="column" width="35%">
 
-- Docker container with ROS2 dependencies
-- Github Container Registry
-- VMs managed with terraform and kubernetes (k8s)
+### What Was Built
+
+- ROS 2 Docker container pushed to GitHub Container Registry
+- VMs provisioned and torn down with **Terraform + k8s**
+- `zenoh-plugin-ros2dds` bridges DDS traffic across VM boundaries
+- Enables bare-metal ↔ VM and VM ↔ VM ROS 2 topic sharing with **zero
+  config changes** on the robot side
 
 </div>
 
 <div class="column" width="65%">
 
-<div id="fig-template">
+<div id="fig-pipeline">
 
 <img src="figures/hacking-pipeline.svg" data-fig-align="center" />
 
-Figure 3: Hacking and connecting workflow
+Figure 3: *End-to-end pipeline: container build → registry → VM
+deployment → zenoh bridge → ROS 2 topic relay.*
 
 </div>
 
@@ -150,103 +218,181 @@ Figure 3: Hacking and connecting workflow
 
 <div class="notes">
 
-Speaker notes go here.
+Emphasise that the zenoh bridge makes the infrastructure topology
+transparent to application code. ROS 2 nodes don’t need to know they’re
+crossing VM boundaries.
+
+> [!NOTE]
+>
+> **Repo**:
+> [UCL-CyberPhysicalSystems/hackathon-01](https://github.com/UCL-CyberPhysicalSystems/hackathon-01)
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 
-## Demos: IsaacSim and IsaacLab
+## Demo 2. IsaacSim & IsaacLab
 
 <div class="columns">
 
-<div class="column" style="width: 35%; font-size: 30%;">
+<div class="column" width="38%">
 
-<div id="fig-template">
+<div id="fig-isaacsim">
 
-<img src="figures/ezgif-4fa230460975b3.gif" data-fig-align="center" />
-
-Figure 4: IsaacSim IDE with robot simple key control
-
-</div>
-
-<div id="fig-template">
-
-<img src="figures/ezgif-Isaac-Lift-Cube-Franka-v0.gif"
+<img src="figures/ezgif-4fa230460975b3.gif" style="width:70.0%"
 data-fig-align="center" />
 
-Figure 5: Franka Lift Cube (RL Training)
+Figure 4: *IsaacSim IDE: interactive robot key control.*
+
+</div>
+
+<div id="fig-franka">
+
+<img src="figures/ezgif-Isaac-Lift-Cube-Franka-v0.gif"
+style="width:70.0%" data-fig-align="center" />
+
+Figure 5: *Franka Lift Cube — RL policy training.*
 
 </div>
 
 </div>
 
-<div class="column" style="width: 60%; font-size: 30%;">
+<div class="column" width="60%">
 
-<div id="fig-template">
+<div id="fig-humanoid-train">
+
+<img src="figures/ezgif-train_Isaac-Humanoid-v0_iter_2000.gif"
+style="width:70.0%" data-fig-align="center" />
+
+Figure 6: *Humanoid training — 128 parallel environments, 2000
+iterations.*
+
+</div>
+
+``` bash
+# Train
+./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py \
+  --task Isaac-Humanoid-v0 --num_envs 128 \
+  --max_iterations 2000 --headless
+
+# Play / evaluate
+./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py \
+  --task Isaac-Humanoid-v0 --num_envs 1000 \
+  --checkpoint logs/rsl_rl/humanoid
+```
+
+</div>
+
+</div>
+
+<div class="notes">
+
+IsaacLab unlocks GPU-parallelised RL training on UCL’s compute nodes.
+Highlight the jump from 128 envs (training) to 1000 envs (evaluation) as
+evidence of the infrastructure’s headroom.
 
 <img src="figures/ezgif-train_Isaac-Humanoid-v0_iter_2000.gif"
 data-fig-align="center" />
 
-Figure 6: ./isaaclab.sh -p
-scripts/reinforcement_learning/rsl_rl/train.py –task Isaac-Humanoid-v0
-–num_envs 128 –max_iterations 2000 –headless
-
-</div>
-
-<div id="fig-template">
+./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py –task
+Isaac-Humanoid-v0 –num_envs 128 –max_iterations 2000 –headless
 
 <img src="figures/ezgif-play_Isaac-Humanoid-v0_1000env.gif"
 data-fig-align="center" />
 
-Figure 7: ./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py
-–task Isaac-Humanoid-v0 –num_envs 1000 –checkpoint logs/rsl_rl/humanoid
+./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py –task
+Isaac-Humanoid-v0 –num_envs 1000 –checkpoint logs/rsl_rl/humanoid
 
 </div>
 
-</div>
+<!-- ============================================================
+     SECTION: FUTURE WORK & TAKEAWAYS
+     ============================================================ -->
 
-</div>
+# Future Work & Key Takeaways
 
 <div class="notes">
 
-</div>
-
-<!-- *********************** NEW SLIDE *********************** -->
-
-# Future work, Key Takeaways, Calls to Action and Acknowledgements
-
-<div class="notes">
-
-Notes goes here
+Wrap up: upcoming hackathons, what the community should take away, and a
+concrete call to action for collaboration and funding.
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 
-## Future events: Hacking cyber-physical systems in real-time
+## Upcoming Hackathons
 
 <div class="columns">
 
-<div class="column" style="width: 35%; font-size: 80%;">
+<div class="column" width="40%">
 
-- Hackathon 1: Preliminary Small Hackathon for Feasibility and Idea
-  Generation. **Monday, 2 March 2026 at UCL Here East (G40).**
-- Hackathon 2: Larger Hackathon to Explore Ideas and Create Projects.
-  **Q4-2026**
+> [!IMPORTANT]
+>
+> ### :calendar: Hackathon 1 — **2 March 2026**
+>
+> **Preliminary Small Hackathon**  
+> Feasibility testing & idea generation  
+> 📍 UCL Here East, Room G40
+
+> [!TIP]
+>
+> ### :calendar: Hackathon 2 — **Q4 2026**
+>
+> **Larger Collaborative Hackathon**  
+> Explore ideas · Create research projects  
+> 📍 TBC
+
+[**Register / follow progress
+→**](https://github.com/UCL-CyberPhysicalSystems/hackathon-01)
 
 </div>
 
-<div class="column" width="65%">
+<div class="column" width="60%">
 
-<div id="fig-template">
+<div id="fig-future-network">
 
 <img src="figures/cyber-physical-hackathon-network.svg"
-data-fig-align="center" />
+style="width:95.0%" data-fig-align="center" />
 
-Figure 8: <https://github.com/UCL-CyberPhysicalSystems/hackathon-01>
+Figure 7: *The same infrastructure will underpin both hackathons.*
 
 </div>
+
+</div>
+
+</div>
+
+<div class="notes">
+
+Hackathon 1 is a low-stakes day to validate the setup with a small
+group. Hackathon 2 opens it to a much larger audience with external
+collaborators.
+
+</div>
+
+<!-- ============================================================ -->
+
+## Key Takeaways
+
+<div style="font-size: 90%;">
+
+<div class="incremental">
+
+- **:unlock: Lowering the barrier to advanced robotics** Cloud-ready,
+  cost-aware infrastructure enables hands-on training with real sensors
+  and real network constraints, without specialist hardware budgets.
+
+- **:arrows_counterclockwise: A proven, scalable model for
+  collaboration** High-performance networking and shared platforms make
+  cross-department and cross-institution work practical and repeatable.
+
+- **:test_tube: A living testbed for research & training** The
+  infrastructure supports skills transfer, rapid prototyping of robotics
+  workflows, and publishable research experiments.
+
+- **:handshake: Call to Action** Partner with us to extend the testbed.
+  We are actively seeking collaboration and funding to scale training,
+  expand use cases, and deploy beyond UCL.
 
 </div>
 
@@ -254,65 +400,8 @@ Figure 8: <https://github.com/UCL-CyberPhysicalSystems/hackathon-01>
 
 <div class="notes">
 
-Speaker notes go here.
-
-</div>
-
-<!-- *********************** NEW SLIDE *********************** -->
-
-## Key Takeaways & Why This Matters
-
-<div style="font-size: 80%;">
-
-- Lowering the Barrier to Advanced Robotics at Scale
-  - <div style="font-size: 60%;">
-
-    Cloud-ready, cost-aware infrastructure enables hands-on robotics
-    training and research using real sensors, networks, and constraints.
-
-    </div>
-
-</div>
-
-<div style="font-size: 80%;">
-
-- A Proven, Scalable Model for Collaboration
-  - <div style="font-size: 60%;">
-
-    High-performance networking and shared platforms make
-    cross-department and cross-institution collaboration practical and
-    repeatable.
-
-    </div>
-
-</div>
-
-<div style="font-size: 80%;">
-
-- A Testbed for Research, Training, and Innovation
-  - <div style="font-size: 60%;">
-
-    The testbed supports skills transfer, research experimentation, and
-    the rapid development of new robotics workflows.
-
-    </div>
-
-</div>
-
-<div style="font-size: 80%;">
-
-- Call to Action
-  - <div style="font-size: 60%;">
-
-    Partner with us to extend the testbed, through collaboration and
-    funding to scale training, expand research use cases, and deploy
-    models beyond a single institution.
-
-    </div>
-
-</div>
-
-<div class="notes">
+Deliver these one at a time with the incremental reveal. End on the call
+to action — have contact details ready.
 
 1.  Lowering the Barrier to Advanced Robotics
 2.  A Scalable Model for Cross-Department Collaboration
@@ -331,65 +420,81 @@ https://doi.org/10.3389/fmed.2021.729978
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 
-## Thank You to UCL colleagues. Let’s Connect!
+## Thank You · Let’s Connect
 
-- UCL CEGE: UCL Civil, Environmental and Geomatic Engineering:  
-  [Mickey Li](https://github.com/mhl787156), [Chris
-  Bendkowski](https://github.com/ctbend)
+<div class="columns">
 
-- UCL ARC: UCL Advanced Research Computing Centre:  
-  [Marlon Wijeyasinghe](https://github.com/mwij02), [James
-  Legg](https://github.com/cjlegg), [Mack
-  Nixon](https://github.com/TOADD), [Mahmoud
-  Abdelrazek](https://github.com/TOADD), [Sunny
-  Park](https://github.com/TOADD), [Emily
-  Dubrovska](https://github.com/pineapple-cat), [Yagmur
-  Ozdemir](https://github.com/yidilozdemir), [Ruaridh
-  Gollifer](https://github.com/ruaridhg), [Samantha
-  Ahern](https://github.com/quirksahern), [Miguel
-  Xochicale](https://github.com/mxochicale), [James
-  Hetherington](https://github.com/jamespjh)
+<div class="column" width="50%">
 
-  - Unified-AI team: Andrew Esterson and Sylvie Ramos
-  - Condenser team: Sam Reece and Brian Maher
+### UCL CEGE
 
-- Get in touch! GitHub: <https://github.com/mxochicale>
+[Mickey Li](https://github.com/mhl787156) · [Chris
+Bendkowski](https://github.com/ctbend)
 
-<div style="font-size: 40%;">
+### UCL ARC
+
+[Marlon Wijeyasinghe](https://github.com/mwij02) · [James
+Legg](https://github.com/cjlegg) · [Mack
+Nixon](https://github.com/TOADD) · [Mahmoud
+Abdelrazek](https://github.com/TOADD) · [Sunny
+Park](https://github.com/TOADD) · [Emily
+Dubrovska](https://github.com/pineapple-cat) · [Yagmur
+Ozdemir](https://github.com/yidilozdemir) · [Ruaridh
+Gollifer](https://github.com/ruaridhg) · [Samantha
+Ahern](https://github.com/quirksahern) · [James
+Hetherington](https://github.com/jamespjh)
+
+</div>
+
+<div class="column" width="50%">
+
+### Teams
+
+**Unified-AI**: Andrew Esterson · Sylvie Ramos  
+**Condenser**: Sam Reece · Brian Maher
+
+------------------------------------------------------------------------
+
+> [!NOTE]
+>
+> ### :speech_balloon: Get in Touch
+>
+> **GitHub**: [github.com/mxochicale](https://github.com/mxochicale)  
+> **UCL ARC**: [ucl.ac.uk/arc](https://www.ucl.ac.uk/arc)  
+> **Hackathon repo**:
+> [UCL-CyberPhysicalSystems/hackathon-01](https://github.com/UCL-CyberPhysicalSystems/hackathon-01)
+
+</div>
 
 </div>
 
 <div class="notes">
 
-Notes goes here
+Thank the room. Leave the slide up during questions — GitHub handle and
+repo URL are visible for anyone who wants to follow up.
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================
+     EXTRA SLIDES (appendix)
+     ============================================================ -->
 
-# Extra slides
+# Appendix
 
-<div class="notes">
+Extra slides for Q&A
 
-Notes goes here
-
-</div>
-
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- ============================================================ -->
 
 ## My Journey
-
-<div id="sec-mt" style="margin-top: 0px; font-size: 50%;">
 
 <img src="figures/mx.svg" style="width:100.0%"
 data-fig-align="center" />
 
-</div>
-
 <div class="notes">
 
-Notes goes here for my journey
+Use this slide if asked about background — brief overview of the path
+from robotics research to ARC infrastructure work.
 
 </div>
