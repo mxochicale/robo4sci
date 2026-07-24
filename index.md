@@ -138,7 +138,7 @@ campus network, and physical hardware (sensors, robots).
 
 <!-- ============================================================ -->
 
-## :robot: UCL Infrastructure Overview
+## :robot: UCL’s cyber-physical infrastructure
 
 <div id="fig-network">
 
@@ -165,6 +165,22 @@ same environment.
 > - **Middleware**: `zenoh-plugin-ros2dds` for VM↔VM and bare-metal↔VM
 >   bridging  
 > - **Networking**: High-performance campus fabric, 10 Gbps+ links
+
+</div>
+
+<!-- ============================================================ -->
+
+## :robot: UCL: sim2real-humanoid-pipeline
+
+<div id="fig-network">
+
+<img src="figures/s2r-h-pipeline.svg" style="width:88.0%"
+data-fig-align="center" />
+
+Figure 3: *UCL-ARC infrastructure, integrating simulators such as Isaac
+Lab with reinforcement learning frameworks and algorithms (skrl and
+stable-baselines3) to support scalable, distributed training and
+deployment workflows.*
 
 </div>
 
@@ -207,7 +223,7 @@ interactive control, (3) IsaacLab RL training at scale.
 
 <img src="figures/hacking-pipeline.svg" data-fig-align="center" />
 
-Figure 3: *End-to-end pipeline: container build → registry → VM
+Figure 4: *End-to-end pipeline: container build → registry → VM
 deployment → zenoh bridge → ROS 2 topic relay.*
 
 </div>
@@ -242,7 +258,7 @@ crossing VM boundaries.
 <img src="figures/ezgif-4fa230460975b3.gif" style="width:70.0%"
 data-fig-align="center" />
 
-Figure 4: *IsaacSim IDE: interactive robot key control.*
+Figure 5: *IsaacSim IDE: interactive robot key control.*
 
 </div>
 
@@ -251,7 +267,7 @@ Figure 4: *IsaacSim IDE: interactive robot key control.*
 <img src="figures/ezgif-Isaac-Lift-Cube-Franka-v0.gif"
 style="width:70.0%" data-fig-align="center" />
 
-Figure 5: *Franka Lift Cube — RL policy training.*
+Figure 6: *Franka Lift Cube — RL policy training.*
 
 </div>
 
@@ -264,7 +280,7 @@ Figure 5: *Franka Lift Cube — RL policy training.*
 <img src="figures/ezgif-train_Isaac-Humanoid-v0_iter_2000.gif"
 style="width:70.0%" data-fig-align="center" />
 
-Figure 6: *Humanoid training — 128 parallel environments, 2000
+Figure 7: *Humanoid training — 128 parallel environments, 2000
 iterations.*
 
 </div>
@@ -354,7 +370,7 @@ concrete call to action for collaboration and funding.
 <img src="figures/cyber-physical-hackathon-network.svg"
 style="width:95.0%" data-fig-align="center" />
 
-Figure 7: *The same infrastructure will underpin both hackathons.*
+Figure 8: *The same infrastructure will underpin both hackathons.*
 
 </div>
 

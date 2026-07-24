@@ -14,32 +14,39 @@
     "text": "🔧 Hacking Cloud Brains, Physical Sensors, and the Network, and Orchestrating Talent\n\n\nFigure 1: Participants working across cyber-physical systems, cloud layers, and sensor networks at UCL Here East.\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
   },
   {
-    "objectID": "index.html#ucl-infrastructure-overview",
-    "href": "index.html#ucl-infrastructure-overview",
+    "objectID": "index.html#ucls-cyber-physical-infrastructure",
+    "href": "index.html#ucls-cyber-physical-infrastructure",
     "title": "",
-    "section": "🤖 UCL Infrastructure Overview",
-    "text": "🤖 UCL Infrastructure Overview\n\n\nFigure 2: Server topology and network communication across UCL’s cyber-physical infrastructure.\n\nKey point: the infrastructure is reproducible. Terraform configs and container images are versioned on GitHub, so any team can spin up the same environment.\n\n\n\n\n\n\nInfrastructure Stack\n\n\n\nCompute: VMs managed with Terraform + Kubernetes (k8s)\n\nContainers: ROS 2 images via GitHub Container Registry\n\nMiddleware: zenoh-plugin-ros2dds for VM↔︎VM and bare-metal↔︎VM bridging\n\nNetworking: High-performance campus fabric, 10 Gbps+ links"
+    "section": "🤖 UCL’s cyber-physical infrastructure",
+    "text": "🤖 UCL’s cyber-physical infrastructure\n\n\nFigure 2: Server topology and network communication across UCL’s cyber-physical infrastructure.\n\nKey point: the infrastructure is reproducible. Terraform configs and container images are versioned on GitHub, so any team can spin up the same environment.\n\n\n\n\n\n\nInfrastructure Stack\n\n\n\nCompute: VMs managed with Terraform + Kubernetes (k8s)\n\nContainers: ROS 2 images via GitHub Container Registry\n\nMiddleware: zenoh-plugin-ros2dds for VM↔︎VM and bare-metal↔︎VM bridging\n\nNetworking: High-performance campus fabric, 10 Gbps+ links"
+  },
+  {
+    "objectID": "index.html#ucl-sim2real-humanoid-pipeline",
+    "href": "index.html#ucl-sim2real-humanoid-pipeline",
+    "title": "",
+    "section": "🤖 UCL: sim2real-humanoid-pipeline",
+    "text": "🤖 UCL: sim2real-humanoid-pipeline\n\n\n\nFigure 3: UCL-ARC infrastructure, integrating simulators such as Isaac Lab with reinforcement learning frameworks and algorithms (skrl and stable-baselines3) to support scalable, distributed training and deployment workflows."
   },
   {
     "objectID": "index.html#demo-1.-vmvm-communication-with-zenoh-plugin-ros2dds",
     "href": "index.html#demo-1.-vmvm-communication-with-zenoh-plugin-ros2dds",
     "title": "",
     "section": "Demo 1. VM↔︎VM Communication with zenoh-plugin-ros2dds",
-    "text": "Demo 1. VM↔︎VM Communication with zenoh-plugin-ros2dds\n\n\nWhat Was Built\n\nROS 2 Docker container pushed to GitHub Container Registry\nVMs provisioned and torn down with Terraform + k8s\nzenoh-plugin-ros2dds bridges DDS traffic across VM boundaries\nEnables bare-metal ↔︎ VM and VM ↔︎ VM ROS 2 topic sharing with zero config changes on the robot side\n\n\n\n\n\n\n\n\nFigure 3: End-to-end pipeline: container build → registry → VM deployment → zenoh bridge → ROS 2 topic relay.\n\n\n\n\n\nEmphasise that the zenoh bridge makes the infrastructure topology transparent to application code. ROS 2 nodes don’t need to know they’re crossing VM boundaries.\n\n\n\nNote\n\n\nRepo: UCL-CyberPhysicalSystems/hackathon-01"
+    "text": "Demo 1. VM↔︎VM Communication with zenoh-plugin-ros2dds\n\n\nWhat Was Built\n\nROS 2 Docker container pushed to GitHub Container Registry\nVMs provisioned and torn down with Terraform + k8s\nzenoh-plugin-ros2dds bridges DDS traffic across VM boundaries\nEnables bare-metal ↔︎ VM and VM ↔︎ VM ROS 2 topic sharing with zero config changes on the robot side\n\n\n\n\n\n\n\n\nFigure 4: End-to-end pipeline: container build → registry → VM deployment → zenoh bridge → ROS 2 topic relay.\n\n\n\n\n\nEmphasise that the zenoh bridge makes the infrastructure topology transparent to application code. ROS 2 nodes don’t need to know they’re crossing VM boundaries.\n\n\n\nNote\n\n\nRepo: UCL-CyberPhysicalSystems/hackathon-01"
   },
   {
     "objectID": "index.html#demo-2.-isaacsim-isaaclab",
     "href": "index.html#demo-2.-isaacsim-isaaclab",
     "title": "",
     "section": "Demo 2. IsaacSim & IsaacLab",
-    "text": "Demo 2. IsaacSim & IsaacLab\n\n\n\n\n\n\n\n\nFigure 4: IsaacSim IDE: interactive robot key control.\n\n\n\n\n\n\n\n\n\nFigure 5: Franka Lift Cube — RL policy training.\n\n\n\n\n\n\n\n\n\n\nFigure 6: Humanoid training — 128 parallel environments, 2000 iterations.\n\n\n\n# Train\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py \\\n  --task Isaac-Humanoid-v0 --num_envs 128 \\\n  --max_iterations 2000 --headless\n\n# Play / evaluate\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py \\\n  --task Isaac-Humanoid-v0 --num_envs 1000 \\\n  --checkpoint logs/rsl_rl/humanoid\n\n\nIsaacLab unlocks GPU-parallelised RL training on UCL’s compute nodes. Highlight the jump from 128 envs (training) to 1000 envs (evaluation) as evidence of the infrastructure’s headroom.\n\n\n\n\n\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py –task Isaac-Humanoid-v0 –num_envs 128 –max_iterations 2000 –headless\n\n\n\n\n\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py –task Isaac-Humanoid-v0 –num_envs 1000 –checkpoint logs/rsl_rl/humanoid"
+    "text": "Demo 2. IsaacSim & IsaacLab\n\n\n\n\n\n\n\n\nFigure 5: IsaacSim IDE: interactive robot key control.\n\n\n\n\n\n\n\n\n\nFigure 6: Franka Lift Cube — RL policy training.\n\n\n\n\n\n\n\n\n\n\nFigure 7: Humanoid training — 128 parallel environments, 2000 iterations.\n\n\n\n# Train\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py \\\n  --task Isaac-Humanoid-v0 --num_envs 128 \\\n  --max_iterations 2000 --headless\n\n# Play / evaluate\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py \\\n  --task Isaac-Humanoid-v0 --num_envs 1000 \\\n  --checkpoint logs/rsl_rl/humanoid\n\n\nIsaacLab unlocks GPU-parallelised RL training on UCL’s compute nodes. Highlight the jump from 128 envs (training) to 1000 envs (evaluation) as evidence of the infrastructure’s headroom.\n\n\n\n\n\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py –task Isaac-Humanoid-v0 –num_envs 128 –max_iterations 2000 –headless\n\n\n\n\n\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py –task Isaac-Humanoid-v0 –num_envs 1000 –checkpoint logs/rsl_rl/humanoid"
   },
   {
     "objectID": "index.html#upcoming-hackathons",
     "href": "index.html#upcoming-hackathons",
     "title": "",
     "section": "Upcoming Hackathons",
-    "text": "Upcoming Hackathons\n\n\n\n\n\n📆 Hackathon 1 — 2 March 2026\n\n\nPreliminary Small Hackathon\nFeasibility testing & idea generation\n📍 UCL Here East, Room G40\n\n\n\n\n\n\n📆 Hackathon 2 — Q4 2026\n\n\nLarger Collaborative Hackathon\nExplore ideas · Create research projects\n📍 TBC\n\n\n\nRegister / follow progress →\n\n\n\n\n\n\n\nFigure 7: The same infrastructure will underpin both hackathons.\n\n\n\n\n\nHackathon 1 is a low-stakes day to validate the setup with a small group. Hackathon 2 opens it to a much larger audience with external collaborators."
+    "text": "Upcoming Hackathons\n\n\n\n\n\n📆 Hackathon 1 — 2 March 2026\n\n\nPreliminary Small Hackathon\nFeasibility testing & idea generation\n📍 UCL Here East, Room G40\n\n\n\n\n\n\n📆 Hackathon 2 — Q4 2026\n\n\nLarger Collaborative Hackathon\nExplore ideas · Create research projects\n📍 TBC\n\n\n\nRegister / follow progress →\n\n\n\n\n\n\n\nFigure 8: The same infrastructure will underpin both hackathons.\n\n\n\n\n\nHackathon 1 is a low-stakes day to validate the setup with a small group. Hackathon 2 opens it to a much larger audience with external collaborators."
   },
   {
     "objectID": "index.html#key-takeaways",
