@@ -157,7 +157,7 @@ the campus network, and physical hardware (sensors, robots).
 
 
 <!-- ============================================================ -->
-## :robot: UCL Infrastructure Overview
+## :robot: UCL’s cyber-physical infrastructure
 
 ::: {#fig-network}
 ![](figures/cyber-physical-hackathon-network.svg){fig-align="center" width="88%"}
@@ -179,6 +179,16 @@ images are versioned on GitHub, so any team can spin up the same environment.
 - **Networking**: High-performance campus fabric, 10 Gbps+ links
 :::
 
+:::
+
+
+<!-- ============================================================ -->
+## :robot: UCL: sim2real-humanoid-pipeline
+
+::: {#fig-network}
+![](figures/s2r-h-pipeline.svg){fig-align="center" width="88%"}
+
+*UCL-ARC infrastructure, integrating simulators such as Isaac Lab with reinforcement learning frameworks and algorithms (skrl and stable-baselines3) to support scalable, distributed training and deployment workflows.*
 :::
 
 
