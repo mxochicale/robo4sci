@@ -4,9 +4,9 @@ pagetitle: "Robo2Sci"
 subtitle: ""
 
 format:
-  revealjs: 
+  revealjs:
     slide-number: true
-    chalkboard: 
+    chalkboard:
       buttons: true
     controls: false
     width: 1280 #1440 #1920 #1050
@@ -31,35 +31,35 @@ format:
 
 # {.title-slide .centeredslide background-iframe="https://mxochicale.github.io/web-animations/" loading="lazy"}
 
-::: {style="background-color: rgba(22,22,22,0.75); 
-  border-radius: 10px; 
-  text-align:center; 
-  padding: 0px; 
-  padding-left: 1.5em; 
-  padding-right: 1.5em; 
-  max-width: min-content; 
-  min-width: max-content; 
-  margin-left: auto; 
-  margin-right: auto; 
-  padding-top: 0.2em; 
-  padding-bottom: 0.2em; 
+::: {style="background-color: rgba(22,22,22,0.75);
+  border-radius: 10px;
+  text-align:center;
+  padding: 0px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  max-width: min-content;
+  min-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
   line-height: 1.5em!important;"}
 
 
 <span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
 
-[Modernising Robotics Skills   
-for Collaborative Science]{style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;"}
+[Modernising Cloud Robotics:
+Debian, Kubernetes & ROS 2]{style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;"}
 
-<!-- 
+<!--
 Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Networked Systems
 -->
 
-</span>  
+</span>
 
 ---
 
-[ [**Miguel Xochicale**](http://name-surname.github.io/) · [UCL Advanced Research Computing](https://www.ucl.ac.uk/advanced-research-computing/)]{style="font-size:0.55em; color:#aaaaaa;"}  
+[ [**Miguel Xochicale**](http://name-surname.github.io/) · SRSE @ [UCL](https://www.ucl.ac.uk/advanced-research-computing/)]{style="font-size:0.55em; color:#aaaaaa;"}
 
 
 
@@ -123,8 +123,8 @@ Cross-department infrastructure, shared testbeds
 **Modernising Robotics Skills**
 
 ::: {.notes}
-Set the scene: why does UCL need modernised robotics infrastructure? 
-The challenge is bridging simulation, cloud compute, and real sensors 
+Set the scene: why does UCL need modernised robotics infrastructure?
+The challenge is bridging simulation, cloud compute, and real sensors
 in a way that's accessible to researchers and students.
 :::
 
@@ -139,8 +139,8 @@ in a way that's accessible to researchers and students.
 :::
 
 ::: {.notes}
-Describe the hackathon format: participants connected VMs, physical sensors, 
-and cloud nodes in a supervised setting. This became the model for scaling 
+Describe the hackathon format: participants connected VMs, physical sensors,
+and cloud nodes in a supervised setting. This became the model for scaling
 robotics education at UCL.
 :::
 
@@ -151,7 +151,7 @@ robotics education at UCL.
 **Orchestrating Cloud, Network, and Physical Sensors**
 
 ::: {.notes}
-Walk through the three layers: cloud VMs managed via Terraform/k8s, 
+Walk through the three layers: cloud VMs managed via Terraform/k8s,
 the campus network, and physical hardware (sensors, robots).
 :::
 
@@ -168,14 +168,14 @@ the campus network, and physical hardware (sensors, robots).
 
 
 ::: {.notes}
-Key point: the infrastructure is reproducible. Terraform configs and container 
+Key point: the infrastructure is reproducible. Terraform configs and container
 images are versioned on GitHub, so any team can spin up the same environment.
 
 ::: {.callout-tip collapse="true"}
 ## Infrastructure Stack
-- **Compute**: VMs managed with Terraform + Kubernetes (k8s)  
-- **Containers**: ROS 2 images via GitHub Container Registry  
-- **Middleware**: `zenoh-plugin-ros2dds` for VM↔VM and bare-metal↔VM bridging  
+- **Compute**: VMs managed with Terraform + Kubernetes (k8s)
+- **Containers**: ROS 2 images via GitHub Container Registry
+- **Middleware**: `zenoh-plugin-ros2dds` for VM↔VM and bare-metal↔VM bridging
 - **Networking**: High-performance campus fabric, 10 Gbps+ links
 :::
 
@@ -202,7 +202,7 @@ images are versioned on GitHub, so any team can spin up the same environment.
 **Cloud Brains · Physical Sensors · Real Networks**
 
 ::: {.notes}
-Three demos: (1) VM-to-VM ROS 2 comms via zenoh, 
+Three demos: (1) VM-to-VM ROS 2 comms via zenoh,
 (2) IsaacSim interactive control, (3) IsaacLab RL training at scale.
 :::
 
@@ -236,7 +236,7 @@ Three demos: (1) VM-to-VM ROS 2 comms via zenoh,
 ::::
 
 ::: {.notes}
-Emphasise that the zenoh bridge makes the infrastructure topology transparent 
+Emphasise that the zenoh bridge makes the infrastructure topology transparent
 to application code. ROS 2 nodes don't need to know they're crossing VM boundaries.
 
 ::: {.callout-note icon=false}
@@ -294,8 +294,8 @@ to application code. ROS 2 nodes don't need to know they're crossing VM boundari
 ::::
 
 ::: {.notes}
-IsaacLab unlocks GPU-parallelised RL training on UCL's compute nodes. 
-Highlight the jump from 128 envs (training) to 1000 envs (evaluation) 
+IsaacLab unlocks GPU-parallelised RL training on UCL's compute nodes.
+Highlight the jump from 128 envs (training) to 1000 envs (evaluation)
 as evidence of the infrastructure's headroom.
 
 
@@ -316,13 +316,59 @@ as evidence of the infrastructure's headroom.
 <!-- ============================================================
      SECTION: FUTURE WORK & TAKEAWAYS
      ============================================================ -->
-# Future Work & Key Takeaways {#tacfa background-color="#1a1a2e"}
+# Future Work {#tacfa background-color="#1a1a2e"}
 
 ::: {.notes}
-Wrap up: upcoming hackathons, what the community should take away, 
+Wrap up: upcoming hackathons, what the community should take away,
 and a concrete call to action for collaboration and funding.
 :::
 
+
+
+<!-- ============================================================ -->
+## :wrench: Orchestrating Debian · Kubernetes · ROS 2
+
+::: {#fig-hackathon}
+![](figures/Gemini_Generated_Image_90a3gb90a3gb90a3.jpeg){fig-align="center" width="90%"}
+
+:::
+
+::: {.notes}
+Describe the hackathon format: participants connected VMs, physical sensors,
+and cloud nodes in a supervised setting. This became the model for scaling
+robotics education at UCL.
+:::
+
+
+
+<!-- ============================================================ -->
+## 🌍 Community Roadmap
+
+::: {#fig-hackathon}
+![](figures/community-roadmap-2026-2027.png){fig-align="center" width="90%"}
+
+:::
+
+::: {.notes}
+Describe the hackathon format: participants connected VMs, physical sensors,
+and cloud nodes in a supervised setting. This became the model for scaling
+robotics education at UCL.
+:::
+
+
+<!-- ============================================================ -->
+##  Thank You · Let's Connect
+
+::: {#fig-hackathon}
+![](figures/robomesh-discussions.png ){fig-align="center" width="90%"}
+
+:::
+
+::: {.notes}
+Describe the hackathon format: participants connected VMs, physical sensors,
+and cloud nodes in a supervised setting. This became the model for scaling
+robotics education at UCL.
+:::
 
 
 
@@ -335,15 +381,15 @@ and a concrete call to action for collaboration and funding.
 
 ::: {.callout-important icon=false}
 ## :calendar: Hackathon 1 — **2 March 2026**
-**Preliminary Small Hackathon**  
-Feasibility testing & idea generation  
+**Preliminary Small Hackathon**
+Feasibility testing & idea generation
 📍 UCL Here East, Room G40
 :::
 
 ::: {.callout-tip icon=false}
 ## :calendar: Hackathon 2 — **Q4 2026**
-**Larger Collaborative Hackathon**  
-Explore ideas · Create research projects  
+**Larger Collaborative Hackathon**
+Explore ideas · Create research projects
 📍 TBC
 :::
 
@@ -361,7 +407,7 @@ Explore ideas · Create research projects
 ::::
 
 ::: {.notes}
-Hackathon 1 is a low-stakes day to validate the setup with a small group. 
+Hackathon 1 is a low-stakes day to validate the setup with a small group.
 Hackathon 2 opens it to a much larger audience with external collaborators.
 :::
 
@@ -377,7 +423,7 @@ Hackathon 2 opens it to a much larger audience with external collaborators.
 ::: {.incremental}
 - **:unlock: Lowering the barrier to advanced robotics**
 Cloud-ready, cost-aware infrastructure enables hands-on training with real sensors and real network constraints, without specialist hardware budgets.
-  
+
 - **:arrows_counterclockwise: A proven, scalable model for collaboration**
 High-performance networking and shared platforms make cross-department and cross-institution work practical and repeatable.
 
@@ -392,7 +438,7 @@ Partner with us to extend the testbed. We are actively seeking collaboration and
 :::
 
 ::: {.notes}
-Deliver these one at a time with the incremental reveal. 
+Deliver these one at a time with the incremental reveal.
 End on the call to action — have contact details ready.
 
 
@@ -406,7 +452,7 @@ End on the call to action — have contact details ready.
 8. A Testbed for Research, Training, and Innovation
 9. Clear Opportunities for Collaboration & Funding
 
-**Sciortino et al. 2017** in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008;      
+**Sciortino et al. 2017** in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008;
 **He et al. 2021** in Front. Med. https://doi.org/10.3389/fmed.2021.729978
 
 :::
@@ -438,15 +484,15 @@ End on the call to action — have contact details ready.
 ::: {.column width="50%"}
 ### Teams
 
-**Unified-AI**: Andrew Esterson · Sylvie Ramos  
+**Unified-AI**: Andrew Esterson · Sylvie Ramos
 **Condenser**: Sam Reece · Brian Maher
 
 ---
 
 ::: {.callout-note icon=false}
 ## :speech_balloon: Get in Touch
-**GitHub**: [github.com/mxochicale](https://github.com/mxochicale)  
-**UCL ARC**: [ucl.ac.uk/arc](https://www.ucl.ac.uk/arc)  
+**GitHub**: [github.com/mxochicale](https://github.com/mxochicale)
+**UCL ARC**: [ucl.ac.uk/arc](https://www.ucl.ac.uk/arc)
 **Hackathon repo**: [UCL-CyberPhysicalSystems/hackathon-01](https://github.com/UCL-CyberPhysicalSystems/hackathon-01)
 :::
 :::
@@ -454,7 +500,7 @@ End on the call to action — have contact details ready.
 ::::
 
 ::: {.notes}
-Thank the room. Leave the slide up during questions — 
+Thank the room. Leave the slide up during questions —
 GitHub handle and repo URL are visible for anyone who wants to follow up.
 :::
 
@@ -473,6 +519,6 @@ Extra slides for Q&A
 ![](figures/mx.svg){fig-align="center" width="100%"}
 
 ::: {.notes}
-Use this slide if asked about background — brief overview of the path 
+Use this slide if asked about background — brief overview of the path
 from robotics research to ARC infrastructure work.
 :::
