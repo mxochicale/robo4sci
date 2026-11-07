@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "",
-    "section": "Overview",
-    "text": "Overview\n\n\nWhat We’ll Cover\n\nIntroduction — Modernising robotics skills at UCL\nUCL Infrastructure — Cloud, network & physical layers\nDemonstrations — Real use cases & live tooling\nFuture Work — Next hackathons & calls to action\n\n\nKey Themes\n\n\n\n☁️ Cloud-native robotics\n\n\nKubernetes, Terraform, container registries\n\n\n\n\n\n\n🤖 Simulation at scale\n\n\nIsaacSim, IsaacLab, reinforcement learning\n\n\n\n\n\n\n👥 Collaborative science\n\n\nCross-department infrastructure, shared testbeds"
-  },
-  {
     "objectID": "index.html#hacking-cloud-brains-physical-sensors-and-the-network-and-orchestrating-talent",
     "href": "index.html#hacking-cloud-brains-physical-sensors-and-the-network-and-orchestrating-talent",
     "title": "",
@@ -14,18 +7,18 @@
     "text": "🔧 Hacking Cloud Brains, Physical Sensors, and the Network, and Orchestrating Talent\n\n\nFigure 1: Participants working across cyber-physical systems, cloud layers, and sensor networks at UCL Here East.\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
   },
   {
-    "objectID": "index.html#ucls-cyber-physical-infrastructure",
-    "href": "index.html#ucls-cyber-physical-infrastructure",
+    "objectID": "index.html#cyber-physical-infrastructure",
+    "href": "index.html#cyber-physical-infrastructure",
     "title": "",
-    "section": "🤖 UCL’s cyber-physical infrastructure",
-    "text": "🤖 UCL’s cyber-physical infrastructure\n\n\nFigure 2: Server topology and network communication across UCL’s cyber-physical infrastructure.\n\nKey point: the infrastructure is reproducible. Terraform configs and container images are versioned on GitHub, so any team can spin up the same environment.\n\n\n\n\n\n\nInfrastructure Stack\n\n\n\nCompute: VMs managed with Terraform + Kubernetes (k8s)\nContainers: ROS 2 images via GitHub Container Registry\nMiddleware: zenoh-plugin-ros2dds for VM↔︎VM and bare-metal↔︎VM bridging\nNetworking: High-performance campus fabric, 10 Gbps+ links"
+    "section": "🤖 Cyber-physical infrastructure",
+    "text": "🤖 Cyber-physical infrastructure\n\n\nFigure 2: Server topology and network communication across UCL’s cyber-physical infrastructure.\n\nKey point: the infrastructure is reproducible. Terraform configs and container images are versioned on GitHub, so any team can spin up the same environment.\n\n\n\n\n\n\nInfrastructure Stack\n\n\n\nCompute: VMs managed with Terraform + Kubernetes (k8s)\nContainers: ROS 2 images via GitHub Container Registry\nMiddleware: zenoh-plugin-ros2dds for VM↔︎VM and bare-metal↔︎VM bridging\nNetworking: High-performance campus fabric, 10 Gbps+ links"
   },
   {
-    "objectID": "index.html#ucl-sim2real-humanoid-pipeline",
-    "href": "index.html#ucl-sim2real-humanoid-pipeline",
+    "objectID": "index.html#sim2real-humanoid-pipeline",
+    "href": "index.html#sim2real-humanoid-pipeline",
     "title": "",
-    "section": "🤖 UCL: sim2real-humanoid-pipeline",
-    "text": "🤖 UCL: sim2real-humanoid-pipeline\n\n\n\nFigure 3: UCL-ARC infrastructure, integrating simulators such as Isaac Lab with reinforcement learning frameworks and algorithms (skrl and stable-baselines3) to support scalable, distributed training and deployment workflows."
+    "section": "🤖 sim2real-humanoid-pipeline",
+    "text": "🤖 sim2real-humanoid-pipeline\n\n\n\nFigure 3: UCL-ARC infrastructure, integrating simulators such as Isaac Lab with reinforcement learning frameworks and algorithms (skrl and stable-baselines3) to support scalable, distributed training and deployment workflows."
   },
   {
     "objectID": "index.html#demo-1.-vmvm-communication-with-zenoh-plugin-ros2dds",
@@ -53,14 +46,14 @@
     "href": "index.html#community-roadmap",
     "title": "",
     "section": "🌍 Community Roadmap",
-    "text": "🌍 Community Roadmap\n\n\nFigure 9: https://github.com/mxochicale/robomesh/discussions\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
+    "text": "🌍 Community Roadmap\n\n\nFigure 9\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
   },
   {
     "objectID": "index.html#thank-you-lets-connect",
     "href": "index.html#thank-you-lets-connect",
     "title": "",
     "section": "Thank You · Let’s Connect",
-    "text": "Thank You · Let’s Connect\n\n\nFigure 10\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
+    "text": "Thank You · Let’s Connect\n\n\nFigure 10: https://github.com/mxochicale/robomesh/discussions\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
   },
   {
     "objectID": "index.html#upcoming-hackathons",
@@ -89,5 +82,12 @@
     "title": "",
     "section": "My Journey",
     "text": "My Journey\n\n\nUse this slide if asked about background — brief overview of the path from robotics research to ARC infrastructure work."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "",
+    "section": "Overview",
+    "text": "Overview\n\n\nWhat We’ll Cover\n\nIntroduction — Modernising robotics skills at UCL\nUCL Infrastructure — Cloud, network & physical layers\nDemonstrations — Real use cases & live tooling\nFuture Work — Next hackathons & calls to action\n\n\nKey Themes\n\n\n\n☁️ Cloud-native robotics\n\n\nKubernetes, Terraform, container registries\n\n\n\n\n\n\n🤖 Simulation at scale\n\n\nIsaacSim, IsaacLab, reinforcement learning\n\n\n\n\n\n\n👥 Collaborative science\n\n\nCross-department infrastructure, shared testbeds"
   }
 ]

@@ -7,7 +7,10 @@ Miguel Xochicale
 <span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
 
 <span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Modernising
-Cloud Robotics: Debian, Kubernetes & ROS 2</span>
+Cloud Robotics:</span>
+
+<span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Debian,
+Kubernetes & ROS 2</span>
 
 <!--
 Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Networked Systems
@@ -34,51 +37,6 @@ mxochicale)](https://mxochicale.github.io/web-animations/)</span>
 <div class="notes">
 
 <span style="border-bottom: 0.5px solid #00ccff;">[`open-healthcare-slides`](https://github.com/mxochicale/physical-ai-in-healthcare-slides/)</span>
-
-</div>
-
-<!-- ============================================================
-     OVERVIEW
-     ============================================================ -->
-
-## Overview
-
-<div class="columns">
-
-<div class="column" width="50%">
-
-### What We’ll Cover
-
-1.  **Introduction** — Modernising robotics skills at UCL
-2.  **UCL Infrastructure** — Cloud, network & physical layers
-3.  **Demonstrations** — Real use cases & live tooling
-4.  **Future Work** — Next hackathons & calls to action
-
-</div>
-
-<div class="column" width="50%">
-
-### Key Themes
-
-> [!NOTE]
->
-> ### :cloud: Cloud-native robotics
->
-> Kubernetes, Terraform, container registries
-
-> [!TIP]
->
-> ### :robot: Simulation at scale
->
-> IsaacSim, IsaacLab, reinforcement learning
-
-> [!IMPORTANT]
->
-> ### :busts_in_silhouette: Collaborative science
->
-> Cross-department infrastructure, shared testbeds
-
-</div>
 
 </div>
 
@@ -124,9 +82,9 @@ for scaling robotics education at UCL.
      SECTION: UCL INFRASTRUCTURE
      ============================================================ -->
 
-# UCL Infrastructure
+# Orchestrating Cloud, Network, and Physical Sensor
 
-**Orchestrating Cloud, Network, and Physical Sensors**
+------------------------------------------------------------------------
 
 <div class="notes">
 
@@ -137,7 +95,7 @@ campus network, and physical hardware (sensors, robots).
 
 <!-- ============================================================ -->
 
-## :robot: UCL’s cyber-physical infrastructure
+## :robot: Cyber-physical infrastructure
 
 <div id="fig-network">
 
@@ -169,7 +127,7 @@ same environment.
 
 <!-- ============================================================ -->
 
-## :robot: UCL: sim2real-humanoid-pipeline
+## :robot: sim2real-humanoid-pipeline
 
 <div id="fig-network">
 
@@ -363,7 +321,7 @@ for scaling robotics education at UCL.
 <img src="figures/community-roadmap-2026-2027.png" style="width:90.0%"
 data-fig-align="center" />
 
-Figure 9: https://github.com/mxochicale/robomesh/discussions
+Figure 9
 
 </div>
 
@@ -384,7 +342,7 @@ for scaling robotics education at UCL.
 <img src="figures/robomesh-discussions.png" style="width:90.0%"
 data-fig-align="center" />
 
-Figure 10
+Figure 10: https://github.com/mxochicale/robomesh/discussions
 
 </div>
 
@@ -571,5 +529,50 @@ data-fig-align="center" />
 
 Use this slide if asked about background — brief overview of the path
 from robotics research to ARC infrastructure work.
+
+</div>
+
+<!-- ============================================================
+     OVERVIEW
+     ============================================================ -->
+
+## Overview
+
+<div class="columns">
+
+<div class="column" width="50%">
+
+### What We’ll Cover
+
+1.  **Introduction** — Modernising robotics skills at UCL
+2.  **UCL Infrastructure** — Cloud, network & physical layers
+3.  **Demonstrations** — Real use cases & live tooling
+4.  **Future Work** — Next hackathons & calls to action
+
+</div>
+
+<div class="column" width="50%">
+
+### Key Themes
+
+> [!NOTE]
+>
+> ### :cloud: Cloud-native robotics
+>
+> Kubernetes, Terraform, container registries
+
+> [!TIP]
+>
+> ### :robot: Simulation at scale
+>
+> IsaacSim, IsaacLab, reinforcement learning
+
+> [!IMPORTANT]
+>
+> ### :busts_in_silhouette: Collaborative science
+>
+> Cross-department infrastructure, shared testbeds
+
+</div>
 
 </div>
