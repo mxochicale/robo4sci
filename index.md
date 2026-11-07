@@ -2,15 +2,14 @@ Miguel Xochicale
 
 # 
 
-<div style="background-color: rgba(22,22,22,0.75);    border-radius: 10px;    text-align:center;    padding: 0px;    padding-left: 1.5em;    padding-right: 1.5em;    max-width: min-content;    min-width: max-content;    margin-left: auto;    margin-right: auto;    padding-top: 0.2em;    padding-bottom: 0.2em;    line-height: 1.5em!important;">
+<div style="background-color: rgba(22,22,22,0.75);   border-radius: 10px;   text-align:center;   padding: 0px;   padding-left: 1.5em;   padding-right: 1.5em;   max-width: min-content;   min-width: max-content;   margin-left: auto;   margin-right: auto;   padding-top: 0.2em;   padding-bottom: 0.2em;   line-height: 1.5em!important;">
 
 <span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
 
 <span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Modernising
-Robotics Skills  
-for Collaborative Science</span>
+Cloud Robotics: Debian, Kubernetes & ROS 2</span>
 
-<!-- 
+<!--
 Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Networked Systems
 -->
 
@@ -19,8 +18,8 @@ Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Ne
 ------------------------------------------------------------------------
 
 <span style="font-size:0.55em; color:#aaaaaa;">[**Miguel
-Xochicale**](http://name-surname.github.io/) · [UCL Advanced Research
-Computing](https://www.ucl.ac.uk/advanced-research-computing/)</span>
+Xochicale**](http://name-surname.github.io/) · SRSE @
+[UCL](https://www.ucl.ac.uk/advanced-research-computing/)</span>
 
 </div>
 
@@ -160,10 +159,10 @@ same environment.
 >
 > ### Infrastructure Stack
 >
-> - **Compute**: VMs managed with Terraform + Kubernetes (k8s)  
-> - **Containers**: ROS 2 images via GitHub Container Registry  
+> - **Compute**: VMs managed with Terraform + Kubernetes (k8s)
+> - **Containers**: ROS 2 images via GitHub Container Registry
 > - **Middleware**: `zenoh-plugin-ros2dds` for VM↔VM and bare-metal↔VM
->   bridging  
+>   bridging
 > - **Networking**: High-performance campus fabric, 10 Gbps+ links
 
 </div>
@@ -325,12 +324,75 @@ Isaac-Humanoid-v0 –num_envs 1000 –checkpoint logs/rsl_rl/humanoid
      SECTION: FUTURE WORK & TAKEAWAYS
      ============================================================ -->
 
-# Future Work & Key Takeaways
+# Future Work
 
 <div class="notes">
 
 Wrap up: upcoming hackathons, what the community should take away, and a
 concrete call to action for collaboration and funding.
+
+</div>
+
+<!-- ============================================================ -->
+
+## :wrench: Orchestrating Debian · Kubernetes · ROS 2
+
+<div id="fig-hackathon">
+
+<img src="figures/Gemini_Generated_Image_90a3gb90a3gb90a3.jpeg"
+style="width:90.0%" data-fig-align="center" />
+
+Figure 8
+
+</div>
+
+<div class="notes">
+
+Describe the hackathon format: participants connected VMs, physical
+sensors, and cloud nodes in a supervised setting. This became the model
+for scaling robotics education at UCL.
+
+</div>
+
+<!-- ============================================================ -->
+
+## 🌍 Community Roadmap
+
+<div id="fig-hackathon">
+
+<img src="figures/community-roadmap-2026-2027.png" style="width:90.0%"
+data-fig-align="center" />
+
+Figure 9
+
+</div>
+
+<div class="notes">
+
+Describe the hackathon format: participants connected VMs, physical
+sensors, and cloud nodes in a supervised setting. This became the model
+for scaling robotics education at UCL.
+
+</div>
+
+<!-- ============================================================ -->
+
+## Thank You · Let’s Connect
+
+<div id="fig-hackathon">
+
+<img src="figures/robomesh-discussions.png" style="width:90.0%"
+data-fig-align="center" />
+
+Figure 10
+
+</div>
+
+<div class="notes">
+
+Describe the hackathon format: participants connected VMs, physical
+sensors, and cloud nodes in a supervised setting. This became the model
+for scaling robotics education at UCL.
 
 </div>
 
@@ -346,17 +408,15 @@ concrete call to action for collaboration and funding.
 >
 > ### :calendar: Hackathon 1 — **2 March 2026**
 >
-> **Preliminary Small Hackathon**  
-> Feasibility testing & idea generation  
+> **Preliminary Small Hackathon** Feasibility testing & idea generation
 > 📍 UCL Here East, Room G40
 
 > [!TIP]
 >
 > ### :calendar: Hackathon 2 — **Q4 2026**
 >
-> **Larger Collaborative Hackathon**  
-> Explore ideas · Create research projects  
-> 📍 TBC
+> **Larger Collaborative Hackathon** Explore ideas · Create research
+> projects 📍 TBC
 
 [**Register / follow progress
 →**](https://github.com/UCL-CyberPhysicalSystems/hackathon-01)
@@ -370,7 +430,7 @@ concrete call to action for collaboration and funding.
 <img src="figures/cyber-physical-hackathon-network.svg"
 style="width:95.0%" data-fig-align="center" />
 
-Figure 8: *The same infrastructure will underpin both hackathons.*
+Figure 11: *The same infrastructure will underpin both hackathons.*
 
 </div>
 
@@ -430,9 +490,8 @@ to action — have contact details ready.
 9.  Clear Opportunities for Collaboration & Funding
 
 **Sciortino et al. 2017** in Computers in Biology and Medicine
-https://doi.org/10.1016/j.compbiomed.2017.01.008;  
-**He et al. 2021** in Front. Med.
-https://doi.org/10.3389/fmed.2021.729978
+https://doi.org/10.1016/j.compbiomed.2017.01.008; **He et al. 2021** in
+Front. Med. https://doi.org/10.3389/fmed.2021.729978
 
 </div>
 
@@ -468,8 +527,8 @@ Hetherington](https://github.com/jamespjh)
 
 ### Teams
 
-**Unified-AI**: Andrew Esterson · Sylvie Ramos  
-**Condenser**: Sam Reece · Brian Maher
+**Unified-AI**: Andrew Esterson · Sylvie Ramos **Condenser**: Sam Reece
+· Brian Maher
 
 ------------------------------------------------------------------------
 
@@ -477,9 +536,9 @@ Hetherington](https://github.com/jamespjh)
 >
 > ### :speech_balloon: Get in Touch
 >
-> **GitHub**: [github.com/mxochicale](https://github.com/mxochicale)  
-> **UCL ARC**: [ucl.ac.uk/arc](https://www.ucl.ac.uk/arc)  
-> **Hackathon repo**:
+> **GitHub**: [github.com/mxochicale](https://github.com/mxochicale)
+> **UCL ARC**: [ucl.ac.uk/arc](https://www.ucl.ac.uk/arc) **Hackathon
+> repo**:
 > [UCL-CyberPhysicalSystems/hackathon-01](https://github.com/UCL-CyberPhysicalSystems/hackathon-01)
 
 </div>
