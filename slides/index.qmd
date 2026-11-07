@@ -50,7 +50,7 @@ format:
 
 [Modernising Cloud Robotics:]{style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;"}
 
-[Orchestrating Ubuntu/Debian, Kubernetes & ROS 2]{style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;"}
+[Orchestrating Ubuntu/Debian, Kubernetes & ROS 2]{style="color:#e0e0e0; font-size:1.0em; display:block; font-weight:600;"}
 
 <!--
 Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Networked Systems
