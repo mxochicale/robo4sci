@@ -312,6 +312,7 @@ robotics education at UCL.
 ::: {#fig-hackathon}
 ![](figures/community-roadmap-2026-2027.png){fig-align="center" width="90%"}
 
+https://github.com/mxochicale/robomesh
 
 :::
 
