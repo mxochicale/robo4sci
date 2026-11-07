@@ -342,7 +342,7 @@ concrete call to action for collaboration and funding.
 <img src="figures/Gemini_Generated_Image_90a3gb90a3gb90a3.jpeg"
 style="width:90.0%" data-fig-align="center" />
 
-Figure 8
+Figure 8: Towards agentic cloud robotics in science
 
 </div>
 
@@ -363,7 +363,7 @@ for scaling robotics education at UCL.
 <img src="figures/community-roadmap-2026-2027.png" style="width:90.0%"
 data-fig-align="center" />
 
-Figure 9
+Figure 9: https://github.com/mxochicale/robomesh/discussions
 
 </div>
 
