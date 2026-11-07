@@ -9,7 +9,7 @@ Miguel Xochicale
 <span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Modernising
 Cloud Robotics:</span>
 
-<span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Orchestrating
+<span style="color:#e0e0e0; font-size:1.0em; display:block; font-weight:600;">Orchestrating
 Ubuntu/Debian, Kubernetes & ROS 2</span>
 
 <!--
