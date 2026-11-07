@@ -321,7 +321,7 @@ for scaling robotics education at UCL.
 <img src="figures/community-roadmap-2026-2027.png" style="width:90.0%"
 data-fig-align="center" />
 
-Figure 9
+Figure 9: https://github.com/mxochicale/robomesh
 
 </div>
 
