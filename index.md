@@ -9,8 +9,8 @@ Miguel Xochicale
 <span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Modernising
 Cloud Robotics:</span>
 
-<span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Debian,
-Kubernetes & ROS 2</span>
+<span style="color:#e0e0e0; font-size:1.65em; display:block; font-weight:600;">Orchestrating
+Ubuntu/Debian, Kubernetes & ROS 2</span>
 
 <!--
 Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Networked Systems
@@ -21,7 +21,7 @@ Distributed Intelligence, Cloud Computing, and Sensor-Driven Discovery Across Ne
 ------------------------------------------------------------------------
 
 <span style="font-size:0.55em; color:#aaaaaa;">[**Miguel
-Xochicale**](http://name-surname.github.io/) · SRSE @
+Xochicale**](http://name-surname.github.io/) · SrRSE @
 [UCL](https://www.ucl.ac.uk/advanced-research-computing/)</span>
 
 </div>
@@ -37,6 +37,51 @@ mxochicale)](https://mxochicale.github.io/web-animations/)</span>
 <div class="notes">
 
 <span style="border-bottom: 0.5px solid #00ccff;">[`open-healthcare-slides`](https://github.com/mxochicale/physical-ai-in-healthcare-slides/)</span>
+
+</div>
+
+<!-- ============================================================
+     OVERVIEW
+     ============================================================ -->
+
+## Overview
+
+<div class="columns">
+
+<div class="column" width="50%">
+
+### What We’ll Cover
+
+1.  **Introduction** — Modernising robotics skills at UCL
+2.  **UCL Infrastructure** — Cloud, network & physical layers
+3.  **Demonstrations** — Real use cases & live tooling
+4.  **Future Work** — Next hackathons & calls to action
+
+</div>
+
+<div class="column" width="50%">
+
+### Key Themes
+
+> [!NOTE]
+>
+> ### :cloud: Cloud-native robotics
+>
+> Kubernetes, Terraform, container registries
+
+> [!TIP]
+>
+> ### :robot: Simulation at scale
+>
+> IsaacSim, IsaacLab, reinforcement learning
+
+> [!IMPORTANT]
+>
+> ### :busts_in_silhouette: Collaborative science
+>
+> Cross-department infrastructure, shared testbeds
+
+</div>
 
 </div>
 
@@ -293,69 +338,6 @@ concrete call to action for collaboration and funding.
 
 <!-- ============================================================ -->
 
-## :wrench: Orchestrating Debian · Kubernetes · ROS 2
-
-<div id="fig-hackathon">
-
-<img src="figures/Gemini_Generated_Image_90a3gb90a3gb90a3.jpeg"
-style="width:90.0%" data-fig-align="center" />
-
-Figure 8: Towards agentic cloud robotics in science
-
-</div>
-
-<div class="notes">
-
-Describe the hackathon format: participants connected VMs, physical
-sensors, and cloud nodes in a supervised setting. This became the model
-for scaling robotics education at UCL.
-
-</div>
-
-<!-- ============================================================ -->
-
-## 🌍 Community Roadmap
-
-<div id="fig-hackathon">
-
-<img src="figures/community-roadmap-2026-2027.png" style="width:90.0%"
-data-fig-align="center" />
-
-Figure 9: https://github.com/mxochicale/robomesh
-
-</div>
-
-<div class="notes">
-
-Describe the hackathon format: participants connected VMs, physical
-sensors, and cloud nodes in a supervised setting. This became the model
-for scaling robotics education at UCL.
-
-</div>
-
-<!-- ============================================================ -->
-
-## Thank You · Let’s Connect
-
-<div id="fig-hackathon">
-
-<img src="figures/robomesh-discussions.png" style="width:90.0%"
-data-fig-align="center" />
-
-Figure 10: https://github.com/mxochicale/robomesh/discussions
-
-</div>
-
-<div class="notes">
-
-Describe the hackathon format: participants connected VMs, physical
-sensors, and cloud nodes in a supervised setting. This became the model
-for scaling robotics education at UCL.
-
-</div>
-
-<!-- ============================================================ -->
-
 ## Upcoming Hackathons
 
 <div class="columns">
@@ -388,7 +370,7 @@ for scaling robotics education at UCL.
 <img src="figures/cyber-physical-hackathon-network.svg"
 style="width:95.0%" data-fig-align="center" />
 
-Figure 11: *The same infrastructure will underpin both hackathons.*
+Figure 8: *The same infrastructure will underpin both hackathons.*
 
 </div>
 
@@ -532,47 +514,65 @@ from robotics research to ARC infrastructure work.
 
 </div>
 
-<!-- ============================================================
-     OVERVIEW
-     ============================================================ -->
+<!-- ============================================================ -->
 
-## Overview
+## :wrench: Orchestrating Debian · Kubernetes · ROS 2
 
-<div class="columns">
+<div id="fig-hackathon">
 
-<div class="column" width="50%">
+<img src="figures/Gemini_Generated_Image_90a3gb90a3gb90a3.jpeg"
+style="width:90.0%" data-fig-align="center" />
 
-### What We’ll Cover
-
-1.  **Introduction** — Modernising robotics skills at UCL
-2.  **UCL Infrastructure** — Cloud, network & physical layers
-3.  **Demonstrations** — Real use cases & live tooling
-4.  **Future Work** — Next hackathons & calls to action
+Figure 9: Towards agentic cloud robotics in science
 
 </div>
 
-<div class="column" width="50%">
+<div class="notes">
 
-### Key Themes
-
-> [!NOTE]
->
-> ### :cloud: Cloud-native robotics
->
-> Kubernetes, Terraform, container registries
-
-> [!TIP]
->
-> ### :robot: Simulation at scale
->
-> IsaacSim, IsaacLab, reinforcement learning
-
-> [!IMPORTANT]
->
-> ### :busts_in_silhouette: Collaborative science
->
-> Cross-department infrastructure, shared testbeds
+Describe the hackathon format: participants connected VMs, physical
+sensors, and cloud nodes in a supervised setting. This became the model
+for scaling robotics education at UCL.
 
 </div>
+
+<!-- ============================================================ -->
+
+## 🌍 Community Roadmap
+
+<div id="fig-hackathon">
+
+<img src="figures/community-roadmap-2026-2027.png" style="width:90.0%"
+data-fig-align="center" />
+
+Figure 10: https://github.com/mxochicale/robomesh
+
+</div>
+
+<div class="notes">
+
+Describe the hackathon format: participants connected VMs, physical
+sensors, and cloud nodes in a supervised setting. This became the model
+for scaling robotics education at UCL.
+
+</div>
+
+<!-- ============================================================ -->
+
+## Thank You · Let’s Connect
+
+<div id="fig-hackathon">
+
+<img src="figures/robomesh-discussions.png" style="width:90.0%"
+data-fig-align="center" />
+
+Figure 11: https://github.com/mxochicale/robomesh/discussions
+
+</div>
+
+<div class="notes">
+
+Describe the hackathon format: participants connected VMs, physical
+sensors, and cloud nodes in a supervised setting. This became the model
+for scaling robotics education at UCL.
 
 </div>

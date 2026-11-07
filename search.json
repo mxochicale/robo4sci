@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "",
+    "section": "Overview",
+    "text": "Overview\n\n\nWhat We’ll Cover\n\nIntroduction — Modernising robotics skills at UCL\nUCL Infrastructure — Cloud, network & physical layers\nDemonstrations — Real use cases & live tooling\nFuture Work — Next hackathons & calls to action\n\n\nKey Themes\n\n\n\n☁️ Cloud-native robotics\n\n\nKubernetes, Terraform, container registries\n\n\n\n\n\n\n🤖 Simulation at scale\n\n\nIsaacSim, IsaacLab, reinforcement learning\n\n\n\n\n\n\n👥 Collaborative science\n\n\nCross-department infrastructure, shared testbeds"
+  },
+  {
     "objectID": "index.html#hacking-cloud-brains-physical-sensors-and-the-network-and-orchestrating-talent",
     "href": "index.html#hacking-cloud-brains-physical-sensors-and-the-network-and-orchestrating-talent",
     "title": "",
@@ -35,32 +42,11 @@
     "text": "Demo 2. IsaacSim & IsaacLab\n\n\n\n\n\n\n\n\nFigure 5: IsaacSim IDE: interactive robot key control.\n\n\n\n\n\n\n\n\n\nFigure 6: Franka Lift Cube — RL policy training.\n\n\n\n\n\n\n\n\n\n\nFigure 7: Humanoid training — 128 parallel environments, 2000 iterations.\n\n\n\n# Train\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py \\\n  --task Isaac-Humanoid-v0 --num_envs 128 \\\n  --max_iterations 2000 --headless\n\n# Play / evaluate\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py \\\n  --task Isaac-Humanoid-v0 --num_envs 1000 \\\n  --checkpoint logs/rsl_rl/humanoid\n\n\nIsaacLab unlocks GPU-parallelised RL training on UCL’s compute nodes. Highlight the jump from 128 envs (training) to 1000 envs (evaluation) as evidence of the infrastructure’s headroom.\n\n\n\n\n\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/train.py –task Isaac-Humanoid-v0 –num_envs 128 –max_iterations 2000 –headless\n\n\n\n\n\n./isaaclab.sh -p scripts/reinforcement_learning/rsl_rl/play.py –task Isaac-Humanoid-v0 –num_envs 1000 –checkpoint logs/rsl_rl/humanoid"
   },
   {
-    "objectID": "index.html#orchestrating-debian-kubernetes-ros-2",
-    "href": "index.html#orchestrating-debian-kubernetes-ros-2",
-    "title": "",
-    "section": "🔧 Orchestrating Debian · Kubernetes · ROS 2",
-    "text": "🔧 Orchestrating Debian · Kubernetes · ROS 2\n\n\nFigure 8: Towards agentic cloud robotics in science\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
-  },
-  {
-    "objectID": "index.html#community-roadmap",
-    "href": "index.html#community-roadmap",
-    "title": "",
-    "section": "🌍 Community Roadmap",
-    "text": "🌍 Community Roadmap\n\n\nFigure 9: https://github.com/mxochicale/robomesh\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
-  },
-  {
-    "objectID": "index.html#thank-you-lets-connect",
-    "href": "index.html#thank-you-lets-connect",
-    "title": "",
-    "section": "Thank You · Let’s Connect",
-    "text": "Thank You · Let’s Connect\n\n\nFigure 10: https://github.com/mxochicale/robomesh/discussions\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
-  },
-  {
     "objectID": "index.html#upcoming-hackathons",
     "href": "index.html#upcoming-hackathons",
     "title": "",
     "section": "Upcoming Hackathons",
-    "text": "Upcoming Hackathons\n\n\n\n\n\n📆 Hackathon 1 — 2 March 2026\n\n\nPreliminary Small Hackathon Feasibility testing & idea generation 📍 UCL Here East, Room G40\n\n\n\n\n\n\n📆 Hackathon 2 — Q4 2026\n\n\nLarger Collaborative Hackathon Explore ideas · Create research projects 📍 TBC\n\n\n\nRegister / follow progress →\n\n\n\n\n\n\n\nFigure 11: The same infrastructure will underpin both hackathons.\n\n\n\n\n\nHackathon 1 is a low-stakes day to validate the setup with a small group. Hackathon 2 opens it to a much larger audience with external collaborators."
+    "text": "Upcoming Hackathons\n\n\n\n\n\n📆 Hackathon 1 — 2 March 2026\n\n\nPreliminary Small Hackathon Feasibility testing & idea generation 📍 UCL Here East, Room G40\n\n\n\n\n\n\n📆 Hackathon 2 — Q4 2026\n\n\nLarger Collaborative Hackathon Explore ideas · Create research projects 📍 TBC\n\n\n\nRegister / follow progress →\n\n\n\n\n\n\n\nFigure 8: The same infrastructure will underpin both hackathons.\n\n\n\n\n\nHackathon 1 is a low-stakes day to validate the setup with a small group. Hackathon 2 opens it to a much larger audience with external collaborators."
   },
   {
     "objectID": "index.html#key-takeaways",
@@ -70,8 +56,8 @@
     "text": "Key Takeaways\n\n\n🔓 Lowering the barrier to advanced robotics Cloud-ready, cost-aware infrastructure enables hands-on training with real sensors and real network constraints, without specialist hardware budgets.\n🔄 A proven, scalable model for collaboration High-performance networking and shared platforms make cross-department and cross-institution work practical and repeatable.\n🧪 A living testbed for research & training The infrastructure supports skills transfer, rapid prototyping of robotics workflows, and publishable research experiments.\n🤝 Call to Action Partner with us to extend the testbed. We are actively seeking collaboration and funding to scale training, expand use cases, and deploy beyond UCL.\n\n\n\nDeliver these one at a time with the incremental reveal. End on the call to action — have contact details ready.\n\nLowering the Barrier to Advanced Robotics\nA Scalable Model for Cross-Department Collaboration\nReal Sensors, Real Networks, Real Constraints\nHigh-Performance Networking Enables New Workflows\nCloud-Ready Robotics Training at Scale\nHands-On Learning Accelerates Skills Transfer\nCost-Aware, Sustainable Infrastructure Design\nA Testbed for Research, Training, and Innovation\nClear Opportunities for Collaboration & Funding\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008; He et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978"
   },
   {
-    "objectID": "index.html#thank-you-lets-connect-1",
-    "href": "index.html#thank-you-lets-connect-1",
+    "objectID": "index.html#thank-you-lets-connect",
+    "href": "index.html#thank-you-lets-connect",
     "title": "",
     "section": "Thank You · Let’s Connect",
     "text": "Thank You · Let’s Connect\n\n\nUCL CEGE\nMickey Li · Chris Bendkowski\nUCL ARC\nMarlon Wijeyasinghe · James Legg · Mack Nixon · Mahmoud Abdelrazek · Sunny Park · Emily Dubrovska · Yagmur Ozdemir · Ruaridh Gollifer · Samantha Ahern · James Hetherington\n\nTeams\nUnified-AI: Andrew Esterson · Sylvie Ramos Condenser: Sam Reece · Brian Maher\n\n\n\n\n💬 Get in Touch\n\n\nGitHub: github.com/mxochicale UCL ARC: ucl.ac.uk/arc Hackathon repo: UCL-CyberPhysicalSystems/hackathon-01\n\n\n\n\n\nThank the room. Leave the slide up during questions — GitHub handle and repo URL are visible for anyone who wants to follow up."
@@ -84,10 +70,24 @@
     "text": "My Journey\n\n\nUse this slide if asked about background — brief overview of the path from robotics research to ARC infrastructure work."
   },
   {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
+    "objectID": "index.html#orchestrating-debian-kubernetes-ros-2",
+    "href": "index.html#orchestrating-debian-kubernetes-ros-2",
     "title": "",
-    "section": "Overview",
-    "text": "Overview\n\n\nWhat We’ll Cover\n\nIntroduction — Modernising robotics skills at UCL\nUCL Infrastructure — Cloud, network & physical layers\nDemonstrations — Real use cases & live tooling\nFuture Work — Next hackathons & calls to action\n\n\nKey Themes\n\n\n\n☁️ Cloud-native robotics\n\n\nKubernetes, Terraform, container registries\n\n\n\n\n\n\n🤖 Simulation at scale\n\n\nIsaacSim, IsaacLab, reinforcement learning\n\n\n\n\n\n\n👥 Collaborative science\n\n\nCross-department infrastructure, shared testbeds"
+    "section": "🔧 Orchestrating Debian · Kubernetes · ROS 2",
+    "text": "🔧 Orchestrating Debian · Kubernetes · ROS 2\n\n\nFigure 9: Towards agentic cloud robotics in science\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
+  },
+  {
+    "objectID": "index.html#community-roadmap",
+    "href": "index.html#community-roadmap",
+    "title": "",
+    "section": "🌍 Community Roadmap",
+    "text": "🌍 Community Roadmap\n\n\nFigure 10: https://github.com/mxochicale/robomesh\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
+  },
+  {
+    "objectID": "index.html#thank-you-lets-connect-1",
+    "href": "index.html#thank-you-lets-connect-1",
+    "title": "",
+    "section": "Thank You · Let’s Connect",
+    "text": "Thank You · Let’s Connect\n\n\nFigure 11: https://github.com/mxochicale/robomesh/discussions\n\nDescribe the hackathon format: participants connected VMs, physical sensors, and cloud nodes in a supervised setting. This became the model for scaling robotics education at UCL."
   }
 ]
