@@ -331,6 +331,7 @@ and a concrete call to action for collaboration and funding.
 ::: {#fig-hackathon}
 ![](figures/Gemini_Generated_Image_90a3gb90a3gb90a3.jpeg){fig-align="center" width="90%"}
 
+Towards agentic cloud robotics in science
 :::
 
 ::: {.notes}
@@ -346,6 +347,8 @@ robotics education at UCL.
 
 ::: {#fig-hackathon}
 ![](figures/community-roadmap-2026-2027.png){fig-align="center" width="90%"}
+
+https://github.com/mxochicale/robomesh/discussions
 
 :::
 
